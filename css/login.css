@@ -1,0 +1,166 @@
+@import url(reset.css);
+
+.body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #43bcff;
+  color: #333333;
+}
+
+.body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url(/img/fundo-login.svg);
+  opacity: 0.2;
+  background-position: center 40%;
+  background-size: cover;
+  z-index: -2;
+}
+
+.body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(51, 51, 51, 0.2);
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  display: inline-block;
+}
+
+.main-login-conteiner {
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+}
+
+.login-logo-conteiner {
+  max-width: 100px;
+}
+
+.login-logo-conteiner img {
+  max-width: 100%;
+}
+
+.login-forms-conteiner {
+  background-color: #fbfbfb;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.login-forms-conteiner h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detalhe-titulo {
+  max-width: 50px;
+}
+
+.detalhe-titulo img {
+  max-width: 100%;
+}
+
+.forms {
+  max-width: 100%;
+  margin-top: 15px;
+  display: grid;
+  gap: 15px;
+}
+
+.item-email-user {
+  display: grid;
+}
+
+.item-label {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.item-input-login {
+  max-width: 100%;
+  border: 2px solid rgba(51, 51, 51, 0.2);
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  color: #333333;
+}
+
+.campo-senha {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.campo-senha button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.campo-senha button i {
+  font-size: 18px;
+  color: #33333399;
+}
+
+.esqueci_senha {
+  font-size: 14px;
+  color: #43bcff;
+  padding: 5px 0;
+  justify-self: flex-start;
+}
+
+.btn-entrar {
+  justify-self: center;
+  padding: 8px 50px;
+  border-radius: 10px;
+  background-color: #43bcff;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.nao-tem-conta {
+  font-size: 14px;
+  justify-self: center;
+}
+
+.nao-tem-conta a {
+  font-weight: 700;
+  color: #43bcff;
+  padding: 5px 0;
+}
+
+@media (max-width: 350px) {
+  .login-forms-conteiner {
+    padding: 10px;
+  }
+
+  .nao-tem-conta {
+    font-size: 10px;
+  }
+
+}
