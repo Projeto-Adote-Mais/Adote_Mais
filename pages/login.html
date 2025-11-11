@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="/img/logo_laranja.svg" type="image/svg">
+    <link rel="stylesheet" href="./../css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body class="body">
+    <main class="main-login">
+        <section>
+            <div class="main-login-conteiner">
+                <div class="login-logo-conteiner">
+                    <img src="/img/logo-azul.svg" alt="Logo Adote Mais">
+                </div>
+                <div class="login-forms-conteiner">
+                    <h1><span class="detalhe-titulo"><img src="/img/pata-azul.svg" alt="Patinha azul"></span>Login</h1>
+                    <form action="" class="forms">
+                        <div class="item-email-user">
+                            <label for="emailUser" class="item-label">E-mail</label>
+                            <input type="email" name="emailUser" id="emailUser" class="item-input-login" required>
+                        </div>
+
+                        <div class="item-senha">
+                            <label for="senhaUser" class="item-label">Senha</label>
+                            <div class="campo-senha">
+                                <input type="password" name="senhaUser" id="senhaUser" class="item-input-login" required>
+                                <button type="button" id="botaoIconeSenha">
+                                    <i id="alterarIconeSenha" class="fa-solid fa-eye-slash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="esqueci_senha">Esqueci minha senha.</a>
+                        <button type="submit" class="btn-entrar">Entrar</button>
+                        <p class="nao-tem-conta">Ainda não tem uma conta? <a href="#">Cadastre-se</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/login.js"></script>
+    <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
