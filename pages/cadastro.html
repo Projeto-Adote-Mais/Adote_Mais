@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="shortcut icon" href="/img/logo_laranja.svg" type="image/svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+</head>
+
+<body class="body-cadastro">
+    <main>
+        <section>
+            <div class="conteiner-cadastro">
+                <h1>Criar conta</h1>
+                <div class="conteiner-cadastro-forms">
+                    <form action="" class="forms-cadastro">
+                        <div class="forms-conteiner-itens">
+                            <fieldset class="perfil-conteiner">
+                                <legend class="label-cadastro">Selecione o perfil:</legend>
+
+                                <div class="opcoes-perfil">
+                                    <div class="btn-perfil-conteiner">
+                                        <input type="radio" id="tutor" name="perfil" value="tutor">
+                                        <label for="tutor" class="btn-perfil tutor">Tutor Animal</label>
+                                    </div>
+                                    <div class="btn-perfil-conteiner">
+                                        <input type="radio" id="voluntario" name="perfil" value="voluntario">
+                                        <label for="voluntario" class="btn-perfil">Voluntário(a)</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="perfil-voluntario-conteiner" id="perfilVoluntario">
+                                <legend class="label-cadastro">Selecione o tipo de voluntário:</legend>
+
+                                <div class="opcoes-perfil-voluntario" >
+                                    <div class="item-opcao-perfil-voluntario">
+                                        <input type="radio" id="veterinario" name="perfil-voluntário"
+                                            value="veterinario">
+                                        <label for="veterinario">Veterinário(a)</label>
+                                    </div>
+
+                                    <div class="item-opcao-perfil-voluntario">
+                                        <input type="radio" id="adestrador" name="perfil-voluntário" value="adestrador">
+                                        <label for="adestrador">Adestrador(a)</label>
+                                    </div>
+
+                                    <div class="item-opcao-perfil-voluntario">
+                                        <input type="radio" id="cuidador" name="perfil-voluntário" value="cuidador">
+                                        <label for="cuidador">Cuidador(a) de pets</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="item-forms-cadastro">
+                                <label for="nomeCompleto" class="label-cadastro">Nome completo</label>
+                                <input type="text" name="nomeCompleto" id="nomeCompleto" required>
+                            </div>
+
+                            <div class="item-forms-cadastro">
+                                <label for="idadeUser" class="label-cadastro">Idade</label>
+                                <input type="number" name="idadeUser" id="idadeUser" required>
+                            </div>
+
+                            <div class="item-forms-cadastro">
+                                <label for="emailCadastro" class="label-cadastro">E-mail</label>
+                                <input type="email" name="emailCadastro" id="emailCadastro" required>
+                            </div>
+
+                            <div class="item-forms-cadastro">
+                                <label for="senhaCadastro" class="label-cadastro">Senha</label>
+                                <div class="campo-senha">
+                                    <input type="password" name="senhaCadastro" id="senhaCadastro" class="item-input-login"
+                                        required>
+                                    <button type="button" id="btnIconeSenha">
+                                        <i id="alterarIconeCadastro" class="fa-solid fa-eye-slash"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="item-forms-cadastro">
+                                <label for="confirmacaoSenha" class="label-cadastro">Confirmação de
+                                    senha</label>
+                                <div class="campo-senha">
+                                    <input type="password" name="confirmacaoSenha" id="confirmacaoSenha" class="item-input-login"
+                                        required>
+                                    <button type="button" id="btnIconeConfirmacao">
+                                        <i id="alterarIconeConfirmacao" class="fa-solid fa-eye-slash"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <fieldset class="cadastro-dados-veracidade">
+                                <legend class="label-cadastro tremos-cadastro">Termos e condições
+                                </legend>
+
+                                <div class="opcao-cadastro-dados-veracidade">
+                                    <div class="item-opcao-cadastro-dados-veracidade">
+                                        <input type="checkbox" id="termo" name="termo" required>
+                                        <label for="termo">Eu li e concordo com os <a href="#" class="detalhe">Termos de
+                                                Uso e
+                                                Privacidade.</a></label>
+                                    </div>
+                                    <div class="item-opcao-cadastro-dados-veracidade">
+                                        <input type="checkbox" id="veracidade" name="veracidade" required>
+                                        <label for="veracidade" class="">Declaro que todas as informações fornecidas são
+                                            verdadeiras.</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <p class="mensagem"></p>
+
+                            <button type="submit" class="btn-criar-conta">Criar conta</button>
+                            <p class="paragrafo-faca-login">
+                                Já tem uma conta? <a href="/pages/login.html" class="detalhe">Faça login</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/cadastro.js"></script>
+    <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
