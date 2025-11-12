@@ -1,0 +1,220 @@
+@import url(reset.css);
+
+.body-cadastro {
+  min-height: 100vh;
+  background-color: #43bcff;
+  color: #333333;
+}
+
+.body-cadastro::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url(/img/fundo-cadastro.svg);
+  background-position: center 5%;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -2;
+}
+
+.body-cadastro::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(51, 51, 51, 0.2);
+  z-index: -1;
+}
+
+fieldset {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.conteiner-cadastro {
+  min-height: 100vh;
+  margin: 50px auto;
+  max-width: 700px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.conteiner-cadastro h1 {
+  font-size: 35px;
+  color: #fbfbfb;
+  text-transform: capitalize;
+}
+
+.conteiner-cadastro-forms {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fbfbfb;
+}
+
+.forms-conteiner-itens {
+  display: grid;
+  gap: 20px;
+}
+
+.label-cadastro {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tremos-cadastro {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.opcoes-perfil {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.opcoes-perfil input[type="radio"] {
+  display: none;
+}
+
+.btn-perfil {
+  display: block;
+  padding: 6px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  color: #fbfbfb;
+  font-weight: 500;
+  background-color: #ffd833;
+  cursor: pointer;
+}
+
+.tutor {
+  background-color: #8ad83f;
+}
+
+.opcoes-perfil-voluntario {
+  display: grid;
+  gap: 5px;
+}
+
+.opcoes-perfil-voluntario label,
+input {
+  cursor: pointer;
+}
+
+.opcoes-perfil-voluntario label {
+  display: inline-block;
+  padding: 3px;
+  font-size: 14px;
+}
+
+.item-opcao-perfil-voluntario {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-forms-cadastro {
+  display: grid;
+}
+
+.item-forms-cadastro input {
+  max-width: 100%;
+  border: 2px solid rgba(51, 51, 51, 0.2);
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  color: #333333;
+}
+
+.item-opcao-cadastro-dados-veracidade {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.opcao-cadastro-dados-veracidade label {
+  font-size: 12px;
+}
+
+.detalhe {
+  color: #43bcff;
+  font-weight: 550;
+}
+
+.btn-criar-conta {
+  justify-self: center;
+  padding: 10px 40px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #43bcff;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.paragrafo-faca-login {
+  font-size: 14px;
+  text-align: center;
+}
+
+.campo-senha {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.campo-senha button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.campo-senha button i {
+  font-size: 18px;
+  color: #33333399;
+}
+
+#perfilVoluntario {
+  display: none;
+}
+
+.mensagem {
+  font-size: 14px;
+  color: #fca11d;
+  font-weight: 500;
+  padding: 10px 0;
+  display: none;
+}
+
+@media (max-width: 540px) {
+  .opcoes-perfil {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 459px) {
+  .label-cadastro {
+    font-size: 14px;
+  }
+}
