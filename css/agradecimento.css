@@ -111,21 +111,51 @@ a {
   font-weight: 500;
   color: #fbfbfb;
   background-color: #ffd833;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
   transform: scale(1.01);
   box-shadow: 0 4px 10px #3333333a;
-  background-color: #43BCFF;
+  background-color: #43bcff;
 }
 
 .sgd-btn:hover {
-  background-color: #FCA11D;
+  background-color: #fca11d;
 }
 
 .sgd-btn {
   background-color: #8ad83f;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 35px 10px;
+  background: linear-gradient(to right, #fca11d 0%, #ffd833 100%);
+}
+
+.footer p {
+  text-align: center;
+  padding: 0 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fbfbfb;
+  position: relative;
+  max-width: 380px;
+}
+
+.footer p::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 40px;
+  height: 30px;
+  background-image: url(/img/detalhe-footer-forms.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media (max-width: 600px) {
