@@ -108,16 +108,18 @@ fieldset {
   border: 2px solid #33333358;
   border-radius: 5px;
   background-color: transparent;
+  color: #333333;
 }
 
 .p-mensagem {
   font-size: 13px;
   font-weight: 600;
+  color: #fca11d;
 }
 
 .grupo-termos a {
-    color: #43bcff;
-    font-weight: 550;
+  color: #43bcff;
+  font-weight: 550;
 }
 
 .termos label {
@@ -146,6 +148,12 @@ fieldset {
   border-radius: 7px;
   justify-self: flex-start;
   cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #fca11d;
+  box-shadow: 0 4px 10px #fca31d75;
 }
 
 .btn-voltar {
@@ -156,6 +164,11 @@ fieldset {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right, #fca11d, #ffd833);
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-voltar:hover {
+  box-shadow: 0 4px 10px #fca31d75;
 }
 
 .btn-voltar i {

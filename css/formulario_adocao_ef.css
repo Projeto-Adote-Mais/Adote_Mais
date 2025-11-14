@@ -122,6 +122,12 @@ a {
   border-radius: 7px;
   justify-self: flex-start;
   cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #fca11d;
+  box-shadow: 0 4px 10px #fca31d75;
 }
 
 .btn-voltar {
@@ -132,6 +138,11 @@ a {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right, #fca11d, #ffd833);
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-voltar:hover {
+  box-shadow: 0 4px 10px #fca31d75;
 }
 
 .btn-voltar i {
@@ -166,6 +177,10 @@ a {
   background-image: url(/img/detalhe-footer-forms.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.esconder {
+  display: none;
 }
 
 @media (max-width: 858px) {

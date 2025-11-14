@@ -13,9 +13,7 @@
     <header class="header">
         <div class="header-conteiner">
             <div class="header-logo">
-                <!-- <a href="/index.html"> -->
                 <img src="/img/logo-branca-laranja.svg" alt="Logo Adote Mais">
-                <!-- </a> -->
             </div>
             <h1 class="titulo-forms">
                 Estrutura Residencial
@@ -35,45 +33,50 @@
                         <legend class="titulo-pergunta">O tipo da moradia é:</legend>
 
                         <div>
-                            <input type="radio" name="moradia-cliente" id="moradia-propria" value="casa ou apartamento próprio">
+                            <input type="radio" name="moradia-cliente" id="moradia-propria" value="propria" required>
                             <label for="moradia-propria">Casa ou Apartamento próprio</label>
                         </div>
 
                         <div>
-                            <input type="radio" name="moradia-cliente" id="moradia-alugada" value="casa ou apartamento alugado">
+                            <input type="radio" name="moradia-cliente" id="moradia-alugada" value="alugada">
                             <label for="moradia-alugada">Casa ou Apartamento alugado</label>
                         </div>
                     </fieldset>
+                    <div class="esconder" id="bloco-moradia-autorizacao">
+                        <fieldset class="grupo-pergunta ">
+                            <legend class="titulo-pergunta">Você tem autorização expressa (contrato ou autorização do
+                                proprietário) para ter animais?</legend>
 
-                    <fieldset class="grupo-pergunta">
-                        <legend class="titulo-pergunta">Você tem autorização expressa (contrato ou autorização do proprietário) para ter animais?</legend>
+                            <div>
+                                <input type="radio" name="autorizacao-cliente" id="autorização-sim" value="sim">
+                                <label for="autorização-sim">Sim! Farei upload do documento</label>
+                            </div>
 
-                        <div>
-                            <input type="radio" name="autorizacao-cliente" id="autorização-sim" value="sim">
-                            <label for="autorização-sim">Sim! Farei upload do documento</label>
+                            <div>
+                                <input type="radio" name="autorizacao-cliente" id="autorizacao-nao" value="nao">
+                                <label for="autorizacao-nao">Não tenho certeza / Não possuo permissão</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="grupo-campo">
+                            <label for="arquivo">Se sim, enviar autorização:</label>
+                            <input type="file" name="arquivo" id="arquivo">
                         </div>
-
-                        <div>
-                            <input type="radio" name="autorizacao-cliente" id="autorizacao-nao" value="nao">
-                            <label for="autorizacao-nao">Não tenho certeza / Não possuo permissão</label>
-                        </div>
-                    </fieldset>
-
-                    <div class="grupo-campo">
-                        <label for="arquivo">Envio da autorização:</label>
-                        <input type="file" name="arquivo" id="arquivo">
                     </div>
 
                     <fieldset class="grupo-pergunta">
-                        <legend class="titulo-pergunta">O local possui área externa (quintal, varanda ou sacada)?</legend>
+                        <legend class="titulo-pergunta">O local possui área externa (quintal, varanda ou sacada)?
+                        </legend>
 
                         <div>
-                            <input type="radio" name="area-externa" id="tem-area-seg" value="sim, é segura e sercada">
+                            <input type="radio" name="area-externa" id="tem-area-seg" value="sim, é segura e sercada"
+                                required>
                             <label for="tem-area-seg">Sim, é segura e sercada</label>
                         </div>
 
                         <div>
-                            <input type="radio" name="area-externa" id="tem-area-n-ad" value="sim, mas sem proteção adequada">
+                            <input type="radio" name="area-externa" id="tem-area-n-ad"
+                                value="sim, mas sem proteção adequada">
                             <label for="tem-area-n-ad">Sim, mas sem proteção adequada</label>
                         </div>
 
@@ -87,7 +90,7 @@
                         <legend class="titulo-pergunta">Onde o animal ficará na maior parte do tempo?</legend>
 
                         <div>
-                            <input type="radio" name="animal-area" id="dentro-casa" value="dentro">
+                            <input type="radio" name="animal-area" id="dentro-casa" value="dentro" required>
                             <label for="dentro-casa">Dentro de casa</label>
                         </div>
 
@@ -107,7 +110,8 @@
                             Avançar
                         </button>
 
-                        <a href="#" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="formulario_adocao_estrutura_familiar.html" class="btn-voltar"><i
+                                class="fa-solid fa-arrow-left"></i></a>
                     </div>
                 </form>
             </div>
@@ -117,6 +121,7 @@
         <p>Conectando histórias, unindo corações!</p>
     </footer>
 
+    <script src="/js/forms_adocao_er.js"></script>
     <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
 </body>
 

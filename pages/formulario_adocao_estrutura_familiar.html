@@ -13,9 +13,7 @@
     <header class="header">
         <div class="header-conteiner">
             <div class="header-logo">
-                <!-- <a href="/index.html"> -->
                 <img src="/img/logo-branca-laranja.svg" alt="Logo Adote Mais">
-                <!-- </a> -->
             </div>
             <h1 class="titulo-forms">
                 Estrutura familiar
@@ -32,11 +30,12 @@
                 <h3 class="titulo-familia">Conhecendo a nova família</h3>
                 <form class="forms">
                     <fieldset class="grupo-pergunta">
-                        <legend class="titulo-pergunta">Todos os familiares que vivem na residência estão cientes e de acordo com a adoção?
+                        <legend class="titulo-pergunta">Todos os familiares que vivem na residência estão cientes e de
+                            acordo com a adoção?
                         </legend>
 
                         <div>
-                            <input type="radio" name="familia-cliente" id="familia-sim" value="sim">
+                            <input type="radio" name="familia-cliente" id="familia-sim" value="sim" required>
                             <label for="familia-sim">Sim</label>
                         </div>
 
@@ -47,15 +46,17 @@
                     </fieldset>
 
                     <div class="grupo-campo">
-                        <label for="qtd-pessoas" class="titulo-pergunta">Quantas pessoas há na residência incluíndo você?</label>
-                        <input type="number" name="qtd-pessoas" id="qtd-pessoas">
+                        <label for="qtd-pessoas" class="titulo-pergunta">Quantas pessoas há na residência incluíndo
+                            você?</label>
+                        <input type="number" name="qtd-pessoas" id="qtd-pessoas" required placeholder="1">
                     </div>
 
                     <fieldset class="grupo-pergunta">
-                        <legend class="titulo-pergunta">Você e / ou outras pessoas que moram contigo estão empregadas?</legend>
+                        <legend class="titulo-pergunta">Você e / ou outras pessoas que moram contigo estão empregadas?
+                        </legend>
 
                         <div>
-                            <input type="radio" name="pessoas-trabalham" id="trabalho-sim" value="sim">
+                            <input type="radio" name="pessoas-trabalham" id="trabalho-sim" value="sim" required>
                             <label for="trabalho-sim">Sim</label>
                         </div>
 
@@ -69,7 +70,7 @@
                         <legend class="titulo-pergunta">Existem crianças na residência?</legend>
 
                         <div>
-                            <input type="radio" name="familia-crianca" id="crianca-sim" value="sim">
+                            <input type="radio" name="familia-crianca" id="crianca-sim" value="sim" required>
                             <label for="crianca-sim">Sim</label>
                         </div>
 
@@ -79,7 +80,7 @@
                         </div>
                     </fieldset>
 
-                    <fieldset class="grupo-pergunta">
+                    <fieldset class="grupo-pergunta esconder" id="bloco-criancas">
                         <legend class="titulo-pergunta">Informe a faixa etária da criança mais nova:</legend>
 
                         <div>
@@ -107,7 +108,7 @@
                         <legend class="titulo-pergunta">Há outros animais de estimação em casa?</legend>
 
                         <div>
-                            <input type="radio" name="animal-estimacao" id="animal-estimacao-sim" value="sim">
+                            <input type="radio" name="animal-estimacao" id="animal-estimacao-sim" value="sim" required>
                             <label for="animal-estimacao-sim">Sim</label>
                         </div>
 
@@ -117,50 +118,52 @@
                         </div>
                     </fieldset>
 
-                    <fieldset class="grupo-pergunta">
-                        <legend class="titulo-pergunta">Informe a quantidade:</legend>
+                    <div class="esconder" id="bloco-animais">
+                        <fieldset class="grupo-pergunta ">
+                            <legend class="titulo-pergunta">Informe a quantidade:</legend>
 
-                        <div>
-                            <input type="radio" name="qtd-animal-estimacao" id="estimacao-1" value="Apenas 1">
-                            <label for="estimacao-1">Apenas 1</label>
-                        </div>
+                            <div>
+                                <input type="radio" name="qtd-animal-estimacao" id="estimacao-1" value="Apenas 1">
+                                <label for="estimacao-1">Apenas 1</label>
+                            </div>
 
-                        <div>
-                            <input type="radio" name="qtd-animal-estimacao" id="estimacao-3" value="Até 3">
-                            <label for="estimacao-3">Até 3</label>
-                        </div>
+                            <div>
+                                <input type="radio" name="qtd-animal-estimacao" id="estimacao-3" value="Até 3">
+                                <label for="estimacao-3">Até 3</label>
+                            </div>
 
-                        <div>
-                            <input type="radio" name="qtd-animal-estimacao" id="estimacao-4" value="4 ou mais">
-                            <label for="estimacao-4">4 ou mais</label>
-                        </div>
-                    </fieldset>
+                            <div>
+                                <input type="radio" name="qtd-animal-estimacao" id="estimacao-4" value="4 ou mais">
+                                <label for="estimacao-4">4 ou mais</label>
+                            </div>
+                        </fieldset>
 
-                    <fieldset class="grupo-pergunta">
-                        <legend class="titulo-pergunta">Informe a(s) espécie(s):</legend>
-                        <div>
-                            <input type="checkbox" name="animais[]" id="tem-cachorro" value="cachorro">
-                            <label for="tem-cachorro">Cachorro</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="animais[]" id="tem-gato" value="gato">
-                            <label for="tem-gato">Gato</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="animais[]" id="tem-passarinho" value="passarinho">
-                            <label for="tem-passarinho">Passarinho</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="animais[]" id="tem-outros" value="outros">
-                            <label for="tem-outros">Outros</label>
-                        </div>
-                    </fieldset>
+                        <fieldset class="grupo-pergunta ">
+                            <legend class="titulo-pergunta">Informe a(s) espécie(s):</legend>
+                            <div>
+                                <input type="checkbox" name="animais[]" id="tem-cachorro" value="cachorro">
+                                <label for="tem-cachorro">Cachorro</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="animais[]" id="tem-gato" value="gato">
+                                <label for="tem-gato">Gato</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="animais[]" id="tem-passarinho" value="passarinho">
+                                <label for="tem-passarinho">Passarinho</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="animais[]" id="tem-outros" value="outros">
+                                <label for="tem-outros">Outros</label>
+                            </div>
+                        </fieldset>
+                    </div>
                     <div class="btn-conteiner">
                         <button type="submit" class="btn">
                             Avançar
                         </button>
 
-                        <a href="#" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="formulario_adocao.html" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></a>
                     </div>
                 </form>
             </div>
@@ -171,6 +174,7 @@
         <p>Conectando histórias, unindo corações!</p>
     </footer>
 
+    <script src="/js/forms_adocao_ef.js"></script>
     <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
 </body>
 

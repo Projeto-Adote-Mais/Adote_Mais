@@ -96,10 +96,12 @@ a {
 .grupo-campo {
   display: grid;
 }
+
 .grupo-campo label {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-top: 22px;
 }
 
 .grupo-campo input {
@@ -123,6 +125,12 @@ a {
   border-radius: 7px;
   justify-self: flex-start;
   cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #fca11d;
+  box-shadow: 0 4px 10px #fca31d75;
 }
 
 .btn-voltar {
@@ -133,6 +141,10 @@ a {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right, #fca11d, #ffd833);
+}
+
+.btn-voltar:hover {
+  box-shadow: 0 4px 10px #fca31d75;
 }
 
 .btn-voltar i {
@@ -168,6 +180,11 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.esconder {
+  display: none;
+}
+
 
 @media (max-width: 858px) {
   .forms {

@@ -30,7 +30,7 @@
                         <legend class="titulo-pergunta">Espécie de preferência:</legend>
 
                         <div>
-                            <input type="radio" name="especie" id="cachorro" value="cachorro">
+                            <input type="radio" name="especie" id="cachorro" value="cachorro" required>
                             <label for="cachorro">Cachorro</label>
                         </div>
 
@@ -40,7 +40,7 @@
                         </div>
                     </fieldset>
 
-                    <fieldset class="grupo-pergunta">
+                    <fieldset class="grupo-pergunta esconder" id="bloco-porte">
                         <legend class="titulo-pergunta">Porte desejado:</legend>
 
                         <div>
@@ -69,7 +69,7 @@
                         <legend class="titulo-pergunta">Idade do animal:</legend>
 
                         <div>
-                            <input type="radio" name="idade-animal" id="filhote" value="filhote">
+                            <input type="radio" name="idade-animal" id="filhote" value="filhote" required>
                             <label for="filhote">Filhote</label>
                         </div>
 
@@ -93,7 +93,7 @@
                         <legend class="titulo-pergunta">Sexo do animal:</legend>
 
                         <div>
-                            <input type="radio" name="animal-sexo" id="macho" value="macho">
+                            <input type="radio" name="animal-sexo" id="macho" value="macho" required>
                             <label for="macho">Macho</label>
                         </div>
 
@@ -141,7 +141,7 @@
                         <legend class="titulo-pergunta">Você está disposto(a) a adotar um animal com necessidades especiais?</legend>
 
                         <div>
-                            <input type="radio" name="necessidades-especiais-animal" id="necessidades-sim" value="sim">
+                            <input type="radio" name="necessidades-especiais-animal" id="necessidades-sim" value="sim" required>
                             <label for="necessidades-sim">Sim</label>
                         </div>
 
@@ -163,16 +163,16 @@
                     </div>
 
                     <div class="grupo-termo">
-                        <input type="checkbox" name="info-verdadeiras" id="info-verdadeiras">
+                        <input type="checkbox" name="info-verdadeiras" id="info-verdadeiras" required>
                         <label for="info-verdadeiras">Declaro que todas as informações prestadas neste formulário são verdadeiras e correspondem à realidade.</label>
                     </div>
 
                     <div class="btn-conteiner">
                         <button type="submit" class="btn">
-                            Avançar
+                            Enviar
                         </button>
 
-                        <a href="#" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="formulario_adocao_estrutura_residencial.html" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></a>
                     </div>
                 </form>
             </div>
@@ -182,6 +182,7 @@
         <p>Conectando histórias, unindo corações!</p>
     </footer>
 
+    <script src="/js/forms_adocao_ci.js"></script>
     <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
 </body>
 </html>
