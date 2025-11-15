@@ -1,0 +1,255 @@
+@import url(reset.css);
+
+body {
+  background-image: url("../img/pataGrande-Fundo.svg");
+  background-repeat: no-repeat;
+  background-position: top right; 
+  background-size: 1000px; 
+}
+
+/* Menu Hamburguer */
+.menuH{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 4;
+}
+
+#menu-toggle{
+  display: none;
+}
+
+.menu-icon{
+  width: 35px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 5;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.linha{
+  height: 4px;
+  background-color: #43bcff;
+  border-radius: 2px;
+}
+
+/* Estilos de menu */
+
+.cabecalho{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.navegacao{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.navegacao a{
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  font-size: 22px;
+}  
+
+.usuario img{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.perfil-usuario{
+  max-width: 1100px;
+  margin: 40px auto 0;
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.usuario1 img{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.informacoes{
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+}
+
+.canetaUsuario{
+  margin-left: auto;
+}
+
+.canetaUsuario img{
+  width: 70px;
+}
+
+.bloco1{
+  max-width: 1100px;
+  margin: 0px auto 0;
+}
+
+.tituloBloco1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin-block: 74px auto;
+  padding: 20px 0;
+}
+
+.tituloBloco1 a{
+  text-decoration: none;
+  color: #000;
+}
+
+.vet-pet1, .card-pet1{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 10px;
+
+}
+
+.card-pet1 > div{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FBFBFB;
+  gap: 1px;
+  border: 1.7px solid #43BCFF;
+  text-align: left;
+  min-height: 320px;
+  min-width: 247px;
+}
+
+.vet-pet1 > div{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FBFBFB;
+  gap: 1px;
+  border: 1.7px solid #43BCFF;
+  text-align: left;
+  min-height: 320px;
+}
+
+.nomePet{
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.card-pet1 p{
+  margin-top: 3px;
+  font-size: 10px;
+}
+
+span {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+p {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.pet1, .pet2, .pet3, .pet4{
+  font-size: 15px;
+  min-width: 247px;
+}
+
+.card-pet1 button{
+  background-color: #43BCFF;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 36px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.card-pet1 button.resgatado{
+  background-color: green;
+}
+
+.card-pet1 button.emverificacao{
+  background-color: orange;
+}
+
+.vet-pet1 button{
+  background-color: #43BCFF;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 36px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+
+.botaoComunicar{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comunicarAbandono {
+  background-color: #FFD833;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.nomeClinica {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Layout 2 colunas no responsivo */
+@media (max-width: 1139px) {
+  .card-pet1,
+  .vet-pet1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    justify-items: center;
+  }
+}
+
+  .card-pet1 > div,
+  .vet-pet1 > div {
+    width: 100%;
+    max-width: 260px;
+  }
+
+
+
+
+
