@@ -1,6 +1,7 @@
 const radiosMoradia = document.querySelectorAll('input[name="moradia-cliente"]');
 const blocoMoradia = document.getElementById("bloco-moradia-autorizacao");  
 
+// Verifica qual campo foi selecionado
 radiosMoradia.forEach(radio => {
     radio.addEventListener("change", () => {
         if (radio.value === "alugada") {
@@ -16,6 +17,7 @@ radiosMoradia.forEach(radio => {
 
 const forms = document.querySelector(".forms");
 
+// Direciona para a próxima página
 forms.addEventListener("submit", (event) => {
     event.preventDefault();
     setTimeout(() => {

@@ -100,7 +100,21 @@ a {
 
 .tutor {
   background-color: #8ad83f;
+  transition: background-color 0.2s ease-in-out;
 }
+
+.tutor:hover {
+  background-color: #43bcff;
+}
+
+.voluntario {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.voluntario:hover {
+  background-color: #fca11d;
+}
+
 
 .opcoes-perfil-voluntario {
   display: grid;
@@ -164,6 +178,12 @@ input {
   font-size: 18px;
   border: none;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-criar-conta:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 4px 10px #43bdff5a;
 }
 
 .paragrafo-faca-login {

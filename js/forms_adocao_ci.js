@@ -19,6 +19,7 @@ radiosEspecie.forEach(radio => {
 
 const forms = document.querySelector(".forms");
 
+// Direciona para a próxima página
 forms.addEventListener("submit", (event) => {
     event.preventDefault();
     setTimeout(() => {

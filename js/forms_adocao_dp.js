@@ -43,6 +43,7 @@ function validaCampos(event) {
         }
     })
 
+    // Direciona para próxima página
     if (!temErro) {
         setTimeout(() => {
             window.location.href = "/pages/formulario_adocao_estrutura_familiar.html";

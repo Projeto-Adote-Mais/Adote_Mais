@@ -1,6 +1,7 @@
 const radiosCrianca = document.querySelectorAll('input[name="familia-crianca"]');
 const blocoCriancas = document.getElementById("bloco-criancas");
 
+// Verifica qual campo foi selecionado
 radiosCrianca.forEach(radio => {
     radio.addEventListener("change", () => {
         if (radio.value === "sim") {
@@ -18,6 +19,7 @@ radiosCrianca.forEach(radio => {
 const radiosAnimais = document.querySelectorAll('input[name="animal-estimacao"]');
 const blocoAnimais = document.getElementById("bloco-animais");
 
+// Verifica qual campo foi selecionado
 radiosAnimais.forEach(radio => {
     radio.addEventListener("change", () => {
         if (radio.value === "sim") {
@@ -36,6 +38,7 @@ radiosAnimais.forEach(radio => {
 
 const forms = document.querySelector(".forms");
 
+// Direciona para a próxima página
 forms.addEventListener("submit", (event) => {
     event.preventDefault();
     setTimeout(() => {

@@ -17,8 +17,10 @@ function alteraIcone() {
 
 forms.addEventListener("submit", redireciona);
 
-// Redireciona para outro local
+// Direciona para a próxima página
 function redireciona(event) {
     event.preventDefault();
-    window.location.replace("../index.html"); 
+    setTimeout(() => {
+        window.location.replace("../index.html"); 
+    }, 1000);
 }
