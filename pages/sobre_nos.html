@@ -16,20 +16,41 @@
                 <img src="/img/logo_laranja.svg" alt="Logo Adote Mais">
             </div>
 
-            <nav aria-label="Navegação Primária" class="nav">
+            <div class="hamburguer" id="btn-mobile" aria-label="Abrir Menu">
+                <img src="/img/icone-menu-hamburguer.svg" alt="Menu" id="icone-menu">
+            </div>
+
+            <nav aria-label="Navegação Primária" class="nav-desktop" id="nav-desktop">
                 <ul class="menu">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#" class="active">Sobre Nós</a></li>
+                    <li><a href="/index.html">Início</a></li>
+                    <li><a href="/pages/sobre_nos.html" class="active-pag">Sobre Nós</a></li>
                     <li><a href="#">Adoção</a></li>
                     <li><a href="#">Cuidados & Dicas</a></li>
                     <li><a href="#">Profissionais Parceiros</a></li>
                 </ul>
             </nav>
 
-            <div class="btn-header">
-                <a href="#" class="btn-login">Login</a>
+            <div class="btn-header" id="btn-header">
+                <a href="/pages/login.html" class="btn-login">Login</a>
                 <a href="#" class="btn-cadastrar">Cadastrar</a>
             </div>
+
+            <!-- Menu Mobile -->
+            <nav class="nav-mobile" id="nav-mobile">
+                <ul class="menu-mobile">
+                    <li><a href="/index.html">Início</a></li>
+                    <li><a href="/pages/sobre_nos.html">Sobre Nós</a></li>
+                    <li><a href="#">Adoção</a></li>
+                    <li><a href="#">Cuidados & Dicas</a></li>
+                    <li><a href="#">Profissionais Parceiros</a></li>
+                </ul>
+
+                <div class="btn-mobile-area">
+                    <a href="/pages/login.html" class="btn-login">Login</a>
+                    <a href="#" class="btn-cadastrar">Cadastrar</a>
+                </div>
+            </nav>
+
         </div>
     </header>
     <main>
@@ -146,7 +167,7 @@
                         </div>
                         <div class="forms-grupo-campo">
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+                            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
                         </div>
                         <div class="forms-grupo-campo">
                             <label for="assunto">Assunto</label>
@@ -194,8 +215,8 @@
             <div class="footer-direita">
                 <ul>
                     <h4>Links úteis</h4>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="/index.html">Início</a></li>
+                    <li><a href="/pages/sobre_nos.html">Sobre Nós</a></li>
                     <li><a href="#">Adoção</a></li>
                     <li><a href="#">Cuidados & Dicas</a></li>
                     <li><a href="#">Profissionais</a></li>
@@ -222,6 +243,7 @@
         </p>
     </footer>
 
+    <script src="/js/sobre_nos.js"></script>
     <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
 </body>
 
