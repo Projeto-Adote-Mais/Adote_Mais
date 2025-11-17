@@ -1,0 +1,1128 @@
+
+
+@import url(reset.css);
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.navegacao button {
+    width: 98px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    background: #43BCFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pagina {
+    border-bottom: 2px solid #FFD833;
+}
+
+.criterio-adocao {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto;
+}
+
+.criterio-adocao h1 {
+    font-size: 45px;
+    color: #333;
+}
+
+.conteudo-criterio {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 70px 0px;
+}
+
+.imagem-fundo {
+    background: url(./../img/adocao/pata-fundo.svg) no-repeat;
+}
+
+.conteudo-criterio p {
+    font-size: 24px;
+    font-weight: 550;
+    color: #333;
+}
+
+.lista-criterio {
+    display: flex;
+    padding: 20px 0;
+}
+
+.lista-criterio img {
+    margin-right: 10px;
+}
+
+.fundo {
+    background: #BFE5F9;
+}
+
+.adocao {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.adocao h2 {
+    padding-top: 50px;
+    font-size: 45px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+.adocao h4 {
+    font-size: 28px;
+    color: #43BCFF;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 80px;
+    line-height: 1.6;
+}
+
+.escolher-pet {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.pet-card {
+    width: 320px;
+    background-color: #fbfbfb;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.nome p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    padding: 0px 5px;
+}
+
+.pet-header img {
+    width: 320px;
+    height: 280px;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.pet-name {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pet-name p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+.pata-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.pet-details {
+    padding: 15px 20px 20px;
+}
+
+.pet-details ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pet-details ul li {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+}
+
+.pet-details button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.adotar-button {
+    width: 130px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #43BCFF;
+    color: #fbfbfb;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background: #FFD833;
+}
+
+.rodape {
+    max-width: 1440px;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.imagem-logo {
+    margin-right: 80px;
+}
+
+.imagem-logo p {
+    line-height: 3.0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.rodape-lista {
+    display: flex;
+    gap: 60px;
+}
+
+.lista ul {
+    list-style-type: none;
+}
+
+.lista a {
+    text-decoration: none;
+    color: #333;
+    line-height: 2.0;
+}
+
+.lista h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.patrocinadores-e-redes-sociais {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    gap: 320px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+}
+
+.redes-sociais {
+    align-items: center;
+    gap: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+}
+
+.logos img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.redes-sociais p {
+    font-size: 17px;
+    color: #33333380;
+}
+
+.patrocinadores img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagem-pata {
+    background: url(./../img/Patas.svg) no-repeat;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 999;
+}
+
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-pet-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-pet-info img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-pet-details p {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.historico {
+    text-align: left;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.historico h3 {
+    font-size: 20px;
+    color: #43BCFF;
+    margin-bottom: 10px;
+}
+
+.historico p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.modal-button-contact,
+.modal-button-close {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-button-contact {
+    background-color: orange;
+    color: #fff;
+}
+
+.modal-button-close {
+    background-color: #43BCFF;
+    color: #fff;
+}
+
+
+@media (max-width: 1205px) {
+    .cabecalho {
+        gap: 40px;
+        padding: 0 20px;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+
+    .navegacao {
+        gap: 15px;
+    }
+
+    .navegacao a {
+        font-size: 16px;
+    }
+
+    .navegacao button {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .criterio-adocao {
+        max-width: 950px;
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    .criterio-adocao h1 {
+        font-size: 40px;
+    }
+
+    .conteudo-criterio {
+        margin: 50px 0;
+    }
+
+    .conteudo-criterio p {
+        font-size: 18px;
+    }
+
+    .lista-criterio {
+        padding: 15px 0;
+    }
+
+    .adocao {
+        max-width: 950px;
+        padding: 0 20px;
+        margin-bottom: 150px;
+    }
+
+    .adocao h2 {
+        font-size: 40px;
+    }
+
+    .adocao h4 {
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+
+    .escolher-pet {
+        justify-content: space-around;
+        gap: 22px;
+        padding-bottom: 60px;
+    }
+
+    .pet-card {
+        width: 300px;
+    }
+
+    .pet-header img {
+        width: 300px;
+        height: 260px;
+    }
+
+    .nome p {
+        font-size: 20px;
+    }
+
+    .rodape {
+        max-width: 950px;
+        height: auto;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .imagem-logo {
+        margin-right: 20px;
+    }
+
+    .imagem-logo p {
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+    .rodape-lista {
+        gap: 30px;
+    }
+
+    .lista h3,
+    .lista a {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .patrocinadores-e-redes-sociais {
+        max-width: 950px;
+        gap: 150px;
+        justify-content: center;
+        padding: 0 20px 30px 20px;
+    }
+
+    .redes-sociais p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 945px) {
+
+    .imagem-fundo {
+        background-size: 700px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    .navegacao {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navegacao a {
+        font-size: 16px;
+    }
+
+    .navegacao button {
+        width: 70px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .criterio-adocao {
+        max-width: 850px;
+        margin: 40px auto;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .criterio-adocao h1 {
+        font-size: 36px;
+    }
+
+    .conteudo-criterio {
+        margin: 30px 0;
+    }
+
+    .conteudo-criterio p {
+        font-size: 16px;
+    }
+
+    .lista-criterio {
+        padding: 10px 0;
+    }
+
+    .adocao {
+        max-width: 650px;
+        margin: 0 auto 100px;
+        padding: 0 15px;
+    }
+
+    .adocao h2 {
+        font-size: 36px;
+        padding-top: 30px;
+    }
+
+    .adocao h4 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .escolher-pet {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding-bottom: 40px;
+    }
+
+    .pet-card {
+        width: 280px;
+    }
+
+    .pet-header img {
+        width: 280px;
+        height: 240px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        max-width: 100%;
+        gap: 40px;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .imagem-logo {
+        margin-right: 0;
+    }
+
+    .rodape-lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .lista {
+        min-width: 180px;
+        text-align: left;
+    }
+
+    .patrocinadores-e-redes-sociais {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 15px 30px 15px;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .patrocinadores {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 847px) {
+
+    .imagem-fundo {
+        background-size: 500px;
+    }
+
+    .cabecalho {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .navegacao {
+        gap: 8px;
+    }
+
+    .navegacao a {
+        font-size: 14px;
+    }
+
+    .navegacao button {
+        width: 65px;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    .criterio-adocao {
+        max-width: 780px;
+        margin: 30px auto;
+        padding: 0 10px;
+    }
+
+    .criterio-adocao h1 {
+        font-size: 32px;
+    }
+
+    .conteudo-criterio {
+        margin: 20px 0;
+    }
+
+    .conteudo-criterio p {
+        font-size: 15px;
+    }
+
+    .lista-criterio {
+        padding: 8px 0;
+    }
+
+    .lista-criterio img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .adocao {
+        max-width: 600px;
+        margin: 0 auto 80px;
+    }
+
+    .adocao h2 {
+        font-size: 32px;
+        padding-top: 25px;
+    }
+
+    .adocao h4 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .escolher-pet {
+        gap: 20px;
+    }
+
+    .pet-card {
+        width: 260px;
+    }
+
+    .pet-header img {
+        width: 260px;
+        height: 220px;
+    }
+
+    .rodape {
+        gap: 30px;
+        padding: 20px 10px;
+    }
+
+    .rodape-lista {
+        gap: 20px;
+    }
+
+    .lista {
+        min-width: 150px;
+    }
+
+    .lista h3,
+    .lista a {
+        font-size: 13px;
+    }
+
+    .patrocinadores-e-redes-sociais {
+        gap: 15px;
+        padding: 0 10px 20px 10px;
+    }
+
+    .redes-sociais p {
+        font-size: 14px;
+    }
+
+    .patrocinadores img {
+        height: 25px;
+    }
+}
+
+@media (max-width: 704px) {
+    .cabecalho {
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .navegacao {
+        gap: 5px;
+    }
+
+    .navegacao a {
+        font-size: 13px;
+    }
+
+    .navegacao button {
+        width: 60px;
+        height: 22px;
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .navegacao {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .criterio-adocao {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 0 5px;
+    }
+
+    .criterio-adocao h1 {
+        font-size: 28px;
+    }
+
+    .conteudo-criterio {
+        margin: 15px 0;
+    }
+
+    .conteudo-criterio p {
+        font-size: 14px;
+    }
+
+    .lista-criterio {
+        padding: 5px 0;
+    }
+
+    .lista-criterio img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .imagem-fundo {
+        background-size: 400px;
+    }
+
+    .adocao {
+        max-width: 500px;
+        margin: 0 auto 60px;
+    }
+
+    .adocao h2 {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+
+    .adocao h4 {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .escolher-pet {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .pet-card {
+        width: 280px;
+    }
+
+    .pet-header img {
+        width: 280px;
+        height: 200px;
+    }
+
+    .nome p {
+        font-size: 18px;
+    }
+
+    .adotar-button {
+        width: 110px;
+        font-size: 14px;
+    }
+
+    .rodape {
+        gap: 20px;
+        padding: 15px 5px;
+    }
+
+    .imagem-logo img {
+        width: 80%;
+        height: auto;
+    }
+
+    .rodape-lista {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .lista {
+        min-width: 130px;
+        text-align: center;
+    }
+
+    .lista h3,
+    .lista a {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .patrocinadores-e-redes-sociais {
+        gap: 10px;
+        padding: 0 10px 15px 10px;
+    }
+
+    .redes-sociais p {
+        font-size: 12px;
+    }
+
+    .patrocinadores img {
+        height: 20px;
+    }
+}
+
+@media (max-width: 624px) {
+    .cabecalho {
+        gap: 0;
+        padding: 5px 0;
+    }
+
+    .navegacao {
+        gap: 3px;
+        padding: 5px 0;
+    }
+
+    .navegacao a {
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+    .navegacao button {
+        width: 55px;
+        height: 20px;
+        font-size: 9px;
+    }
+
+    .criterio-adocao {
+        max-width: 550px;
+        margin: 15px auto;
+        padding: 0 5px;
+    }
+
+    .criterio-adocao h1 {
+        font-size: 24px;
+    }
+
+    .conteudo-criterio {
+        margin: 10px 0;
+    }
+
+    .conteudo-criterio p {
+        font-size: 13px;
+    }
+
+    .lista-criterio {
+        padding: 3px 0;
+    }
+
+    .lista-criterio img {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+
+    .imagem-fundo {
+        background-size: 350px;
+        background-position: center bottom;
+    }
+
+    .adocao {
+        max-width: 300px;
+        margin: 0 auto 50px;
+    }
+
+    .adocao h2 {
+        font-size: 24px;
+        padding-top: 15px;
+    }
+
+    .adocao h4 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .escolher-pet {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .pet-card {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .pet-header img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .nome p {
+        font-size: 16px;
+    }
+
+    .adotar-button {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .rodape {
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .imagem-logo img {
+        width: 70%;
+    }
+
+    .rodape-lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .lista {
+        min-width: unset;
+        width: 80%;
+        text-align: center;
+    }
+
+    .lista h3,
+    .lista a {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+
+    .patrocinadores-e-redes-sociais {
+        gap: 8px;
+        padding: 0 5px 10px 5px;
+    }
+
+    .redes-sociais p {
+        font-size: 11px;
+    }
+
+    .patrocinadores img {
+        height: 18px;
+    }
+}
+
+@media (max-width: 452px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 0;
+        padding: 5px 0;
+    }
+
+    .cabecalho img {
+        width: 100px;
+        height: auto;
+    }
+
+    .navegacao {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .navegacao a {
+        font-size: 11px;
+        padding: 2px 4px;
+    }
+
+    .navegacao button {
+        width: 45px;
+        height: 18px;
+        font-size: 8px;
+    }
+
+    .criterio-adocao {
+        max-width: 95%;
+        margin: 15px auto;
+        padding: 0 5px;
+        align-items: flex-start;
+    }
+
+    .criterio-adocao h1 {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .conteudo-criterio {
+        margin: 10px 0;
+        padding: 0 5px;
+    }
+
+    .conteudo-criterio p {
+        font-size: 12px;
+        line-height: 1.4;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .lista-criterio {
+        padding: 5px 0;
+        align-items: flex-start;
+    }
+
+    .lista-criterio img {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    .imagem-fundo {
+        background: none;
+    }
+
+    .logos img {
+        height: 25px;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .modal-content h2 {
+        font-size: 20px;
+    }
+
+    .modal-pet-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-pet-info img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .modal-pet-details p {
+        font-size: 14px;
+    }
+
+    .historico h3 {
+        font-size: 16px;
+    }
+
+    .historico p {
+        font-size: 12px;
+    }
+
+    .modal-actions {
+        margin-top: 15px;
+    }
+
+    .modal-button-contact,
+    .modal-button-close {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}

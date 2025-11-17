@@ -1,0 +1,649 @@
+
+@import url(reset.css);
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.navegacao button {
+    width: 98px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    background: #43BCFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pagina {
+    border-bottom: 2px solid #FFD833;
+}
+
+.imagem-fundo-1 {
+    background: url(./../img/profissionais_parceiros/Pata-direita.svg) no-repeat right top;
+}
+
+.imagem-fundo-2 {
+    background: url(./../img/profissionais_parceiros/Pata-esquerda.svg) no-repeat;
+}
+
+.profissionais-parceiros {
+    max-width: 1100px;
+    margin: 80px auto;
+}
+
+.profissionais-parceiros h3 {
+    font-size: 60px;
+    text-align: center;
+    color: #FCA11D;
+    font-weight: 400;
+}
+
+.profissionais-parceiros h1 {
+    font-size: 90px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 200px;
+}
+
+.card-profissionais {
+    width: 345px;
+    background-color: #fbfbfb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho-card {
+    background-color: #43BCFF;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.informacoes {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.informacoes h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+}
+
+.informacoes h4 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #FCA11D;
+    line-height: 2.4;
+    border-bottom: 2px solid #ebebeb;
+}
+
+.email {
+    font-size: 19px;
+    color: #333;
+    padding: 20px 0;
+}
+
+.informacoes-importantes {
+    max-width: 200px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 0;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.informacoes-importantes p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+
+.botao-contato {
+    margin: 20px 0;
+    width: 270px;
+    height: 68px;
+    border: none;
+    border-radius: 18px;
+    background: #8AD83F;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fbfbfb;
+    cursor: pointer;
+}
+
+.profissionais {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+footer {
+    background: #FFD833;
+}
+
+
+.rodape {
+    max-width: 1440px;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.imagem-logo {
+    margin-right: 80px;
+}
+
+.imagem-logo p {
+    line-height: 3.0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.rodape-lista {
+    display: flex;
+    gap: 60px;
+}
+
+
+.lista ul {
+    list-style-type: none;
+}
+
+.lista a {
+    text-decoration: none;
+    color: #333;
+    line-height: 2.0;
+}
+
+.lista h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.patrocinadores-e-redes-sociais {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    gap: 320px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+}
+
+
+.redes-sociais {
+    align-items: center;
+    gap: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+}
+
+.logos img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.redes-sociais p {
+    font-size: 17px;
+    color: #33333380;
+}
+
+.patrocinadores img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagem-pata {
+    background: url(./../img/Patas.svg) no-repeat;
+}
+
+@media (max-width: 1205px) {
+
+    .cabecalho {
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .navegacao {
+        gap: 15px
+    }
+
+    .navegacao a {
+        font-size: 16px;
+    }
+
+    .profissionais-parceiros {
+        max-width: 1000px;
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    .profissionais-parceiros h3 {
+        font-size: 48px;
+    }
+
+    .profissionais-parceiros h1 {
+        font-size: 70px;
+        margin-bottom: 120px;
+    }
+
+    .profissionais {
+        gap: 30px;
+    }
+
+    .card-profissionais {
+        width: 100%;
+        max-width: 310px;
+    }
+
+    .informacoes h2 {
+        font-size: 30px;
+    }
+
+    .informacoes h4 {
+        font-size: 24px;
+    }
+
+    .email {
+        font-size: 17px;
+    }
+
+    .botao-contato {
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .rodape {
+        max-width: 1000px;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .imagem-logo {
+        margin-right: 20px;
+    }
+
+    .imagem-logo p {
+        line-height: 1.5;
+    }
+
+    .rodape-lista {
+        gap: 30px;
+    }
+
+    .lista h3,
+    .lista a {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .patrocinadores-e-redes-sociais {
+        max-width: 1000px;
+        gap: 200px;
+        padding: 0 20px 30px 20px;
+    }
+
+    .patrocinadores img {
+        height: 45px;
+    }
+}
+
+@media (max-width: 985px) {
+
+    .cabecalho {
+        gap: 20px;
+    }
+
+    .cabecalho img {
+        height: 90px;
+    }
+
+    .navegacao {
+        gap: 10px;
+    }
+
+    .navegacao a {
+        font-size: 12px;
+    }
+
+    .navegacao button {
+        width: 80px;
+        height: 28px;
+        font-size: 13px;
+    }
+
+    .profissionais-parceiros {
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 0 10px;
+    }
+
+    .profissionais-parceiros h3 {
+        font-size: 40px;
+    }
+
+    .profissionais-parceiros h1 {
+        font-size: 60px;
+        margin-bottom: 80px;
+    }
+
+    .profissionais {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .card-profissionais {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .informacoes h2 {
+        font-size: 28px;
+    }
+
+    .informacoes h4 {
+        font-size: 20px;
+    }
+
+    .botao-contato {
+        width: 80%;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .rodape {
+        max-width: 90%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .imagem-logo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .imagem-logo p {
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+    .rodape-lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .lista {
+        flex-basis: 40%;
+        text-align: center;
+    }
+
+    .patrocinadores-e-redes-sociais {
+        max-width: 90%;
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .redes-sociais {
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+
+    .patrocinadores {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 759px) {
+
+    .imagem-fundo-1 {
+        background-size: 300px;
+    }
+
+    .imagem-fundo-2 {
+        background-size: 250px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .navegacao {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .navegacao a {
+        font-size: 11px;
+    }
+
+    .navegacao button {
+        width: 70px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .profissionais-parceiros {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 0 5px;
+    }
+
+    .profissionais-parceiros h3 {
+        font-size: 32px;
+    }
+
+    .profissionais-parceiros h1 {
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+
+    .profissionais {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .card-profissionais {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .informacoes h2 {
+        font-size: 24px;
+    }
+
+    .informacoes h4 {
+        font-size: 18px;
+    }
+
+    .email {
+        font-size: 16px;
+    }
+
+    .informacoes-importantes {
+        max-width: 80%;
+    }
+
+    .botao-contato {
+        width: 85%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .rodape {
+        padding: 20px 0;
+    }
+
+    .rodape-lista {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .patrocinadores-e-redes-sociais {
+        gap: 30px;
+        padding: 0 10px 20px 10px;
+    }
+}
+
+@media (max-width: 545px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .navegacao {
+        justify-content: center;
+        width: 100%;
+        max-width: 450px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .navegacao a {
+        font-size: 10px;
+    }
+
+    .navegacao button {
+        width: 65px;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    .profissionais-parceiros {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .profissionais-parceiros h3 {
+        font-size: 28px;
+    }
+
+    .profissionais-parceiros h1 {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    .card-profissionais {
+        max-width: 320px;
+    }
+
+    .informacoes h2 {
+        font-size: 22px;
+    }
+
+    .informacoes h4 {
+        font-size: 16px;
+        line-height: 2.0;
+    }
+
+    .email {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .informacoes-importantes p {
+        font-size: 14px;
+    }
+
+    .botao-contato {
+        width: 80%;
+        height: 45px;
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    .imagem-fundo-1 {
+        background-size: 200px;
+    }
+
+    .imagem-fundo-2 {
+        background-size: 180px;
+    }
+
+    .rodape {
+        padding: 15px 0;
+    }
+
+    .rodape-lista {
+        gap: 15px;
+    }
+
+    .imagem-logo p {
+        font-size: 14px;
+    }
+
+    .lista h3,
+    .lista a {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .patrocinadores-e-redes-sociais {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 10px 15px 10px;
+    }
+
+    .patrocinadores img {
+        height: 35px;
+    }
+
+    .redes-sociais {
+        text-align: center;
+    }
+
+    .redes-sociais p {
+        font-size: 14px;
+    }
+}
