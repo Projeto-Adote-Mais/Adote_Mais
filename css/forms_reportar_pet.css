@@ -92,10 +92,34 @@ textarea {
   resize: none;
 }
 
-.grupo-campos .btn-imagem-animal {
-  border: none;
-  padding: 0;
-  border-radius: 0;
+.label-animal {
+  justify-self: left;
+}
+
+#foto-animal {
+  display: none;
+}
+
+.btn-file {
+  background: linear-gradient(to right, #fca11d, #ffd833);
+  color: #fbfbfb;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+#file-name {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.file-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .btn-conteiner {
@@ -143,5 +167,29 @@ textarea {
 }
 
 .p-mensagem-positiva {
-  color: #8AD83F;
+  color: #8ad83f;
+}
+
+@media (max-width: 474px) {
+  #file-name {
+    margin-left: 0px;
+    font-size: 12px;
+  }
+
+  .btn-file {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .file-wrapper {
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+
+  }
+
+  .btn-conteiner {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }

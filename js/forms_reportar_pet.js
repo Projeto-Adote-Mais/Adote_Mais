@@ -47,3 +47,15 @@ function verificaCampos(event) {
 }
 
 forms.addEventListener("submit", verificaCampos);
+
+
+const inputFile = document.querySelector("#foto-animal");
+const fileName = document.querySelector("#file-name");
+
+inputFile.addEventListener("change", () => {
+    if (inputFile.files.length > 0) {
+        fileName.textContent = inputFile.files[0].name;
+    } else {
+        fileName.textContent = "Nenhum arquivo escolhido";
+    }
+});

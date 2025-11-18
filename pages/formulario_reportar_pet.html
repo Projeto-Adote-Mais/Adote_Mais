@@ -54,24 +54,32 @@
 
                     <div class="grupo-campos">
                         <label for="caracteristica">Características do animal</label>
-                        <textarea name="caracteristica" id="caracteristica" rows="4" placeholder="Ex: Cor, raça,  porte grande, marrom"></textarea>
+                        <textarea name="caracteristica" id="caracteristica" rows="4"
+                            placeholder="Ex: Cor, raça,  porte grande, marrom"></textarea>
                     </div>
 
                     <div class="grupo-campos">
                         <label for="endereco">Endereço</label>
-                        <input type="text" name="endereco" id="endereco" placeholder="Endereço onde o animal foi encontrado" required>
+                        <input type="text" name="endereco" id="endereco"
+                            placeholder="Endereço onde o animal foi encontrado" required>
                         <p class="p-mensagem"></p>
                     </div>
 
                     <div class="grupo-campos">
                         <label for="ponto-referencia">Ponto de referência</label>
-                        <input type="text" name="ponto-referencia" id="ponto-referencia" placeholder="Ex: rua sem saída" required>
+                        <input type="text" name="ponto-referencia" id="ponto-referencia" placeholder="Ex: rua sem saída"
+                            required>
                         <p class="p-mensagem"></p>
                     </div>
 
                     <div class="grupo-campos">
-                        <label for="foto-animal">Foto do animal</label>
-                        <input type="file" name="foto-animal" id="foto-animal" class="btn-imagem-animal" required>
+                        <label for="foto-animal" class="label-animal">Foto do animal</label>
+
+                        <div class="file-wrapper">
+                            <label for="foto-animal" class="btn-file">Escolher arquivo</label>
+                            <span id="file-name">Nenhum arquivo escolhido</span>
+                            <input type="file" id="foto-animal" name="foto-animal" class="btn-imagem-animal" required />
+                        </div>
                     </div>
 
                     <p class="p-mensagem-positiva"></p>
