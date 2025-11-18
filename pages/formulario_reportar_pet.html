@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="/img/logo_laranja.svg" type="image/svg">
+    <link rel="stylesheet" href="/css/forms_reportar_pet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Pet em Vulnerabilidade</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="conteiner">
+                <h1>Reportar Pet em Vulnerabilidade</h1>
+
+                <form class="forms">
+                    <div class="textos-forms">
+                        <h2>Formulário</h2>
+                        <div>
+                            <p><strong>Dê voz a quem precisa!</strong></p>
+                            <p>Sua informação é crucial para resgatarmos animais em perigo. Preencha os campos com o
+                                máximo
+                                de detalhes possível sobre a localização e a situação do animal.</p>
+                        </div>
+
+                        <div>
+                            <p><strong>O que acontece depois:</strong> Nossa equipe verifica o local, aciona as ONGs e
+                                os profissionais de resgate parceiros mais próximos, e monitora a situação. Todos os
+                                seus dados de contato são tratados com confidencialidade e usados apenas para
+                                confirmarmos as informações.</p>
+                        </div>
+
+                        <p class="agradecimento">
+                            Obrigado por sua Empatia e Colaboração!
+                        </p>
+                    </div>
+
+                    <div class="grupo-campos">
+                        <label for="nome">Nome de usuário</label>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome de usuário" required>
+                        <p class="p-mensagem"></p>
+                    </div>
+
+                    <div class="grupo-campos">
+                        <label for="animal">Animal</label>
+                        <select name="animal" id="animal" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="gato">Gato</option>
+                            <option value="gato">Cachorro</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-campos">
+                        <label for="caracteristica">Características do animal</label>
+                        <textarea name="caracteristica" id="caracteristica" rows="4" placeholder="Ex: Cor, raça,  porte grande, marrom"></textarea>
+                    </div>
+
+                    <div class="grupo-campos">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" placeholder="Endereço onde o animal foi encontrado" required>
+                        <p class="p-mensagem"></p>
+                    </div>
+
+                    <div class="grupo-campos">
+                        <label for="ponto-referencia">Ponto de referência</label>
+                        <input type="text" name="ponto-referencia" id="ponto-referencia" placeholder="Ex: rua sem saída" required>
+                        <p class="p-mensagem"></p>
+                    </div>
+
+                    <div class="grupo-campos">
+                        <label for="foto-animal">Foto do animal</label>
+                        <input type="file" name="foto-animal" id="foto-animal" class="btn-imagem-animal" required>
+                    </div>
+
+                    <p class="p-mensagem-positiva"></p>
+
+                    <div class="btn-conteiner">
+                        <button type="submit" class="btn">Enviar</button>
+                        <a href="/pages/perfil.html" class="btn">Voltar</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/forms_reportar_pet.js"></script>
+</body>
+
+</html>
