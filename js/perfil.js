@@ -1,23 +1,14 @@
-<script>
-  document.querySelectorAll('.ver-mais').forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
+const btnMobile = document.getElementById("btn-mobile");
+const navMobile = document.getElementById("nav-mobile");
 
-      var section = this.closest('section');
-      var cardsContainer =
-        section.querySelector('.card-pet1') ||
-        section.querySelector('.vet-pet1');
+// Ativa nav mobile
+btnMobile.addEventListener("click", () => {
+  navMobile.classList.toggle("active");
+});
 
-      if (!cardsContainer) return;
-
-      cardsContainer.classList.toggle('mostrar-todos');
-
-      if (cardsContainer.classList.contains('mostrar-todos')) {
-        this.textContent = 'Ver menos';
-      } else {
-        this.textContent = 'Ver mais';
-      }
-    })
-  });
-</script>
-
+// Esconde nav mobile com relação ao tamanho da janela
+window.addEventListener("resize", () => {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    navMobile.classList.remove("active");
+  }
+});
