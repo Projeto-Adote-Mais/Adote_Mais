@@ -656,6 +656,22 @@ textarea {
   display: block;
 }
 
+@media (max-width: 1026px) {
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-esquerda {
+    align-items: center;
+  }
+
+  .footer-esquerda p {
+    text-align: center;
+  }
+
+}
+
 @media (max-width: 990px) {
   .btn-header,
   .nav-desktop {
@@ -945,7 +961,7 @@ textarea {
 }
 
 @media (max-width: 396px) {
- .apresenta-img img {
+  .apresenta-img img {
     border-radius: 20px 20px 20px 100px;
   }
 }
