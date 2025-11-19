@@ -1,0 +1,531 @@
+@import url(reset.css);
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #fbfbfb;
+  color: #333333;
+}
+
+/* Header */
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  position: relative;
+  gap: 15px;
+}
+
+.logo-header {
+  max-width: 65px;
+}
+
+.logo-header img {
+  max-width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu a {
+  padding: 5px 0;
+  font-size: 17px;
+  color: #333333;
+  font-weight: 500;
+  position: relative;
+}
+
+.menu a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px 1px;
+  background-color: #ffd833;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.menu a:hover::before {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.menu a.active-pag::before {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.btn-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn-header a {
+  padding: 4px 16px;
+  font-size: 17px;
+  color: #fbfbfb;
+  font-weight: 500;
+  background-color: #43bcff;
+  border-radius: 8px;
+  border: 2px solid #43bcff;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn-header a:hover {
+  color: #43bcff;
+  background-color: transparent;
+}
+
+/* Menu mobile */
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  background: #fbfbfb;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 12px 10px #33333311;
+}
+
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-mobile li a {
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+  color: #333333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.menu-mobile li a:hover {
+  transform: scale(1.02);
+  color: #43bcff;
+}
+
+.btn-mobile-area {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.btn-mobile-area a {
+  padding: 4px 16px;
+  font-size: 17px;
+  color: #fbfbfb;
+  font-weight: 500;
+  background-color: #43bcff;
+  border-radius: 8px;
+  border: 2px solid #43bcff;
+  text-align: center;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn-mobile-area a:hover {
+  color: #43bcff;
+  background-color: transparent;
+}
+
+.active {
+  display: block;
+}
+
+@media (max-width: 990px) {
+  .btn-header,
+  .nav-desktop {
+    display: none;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+}
+
+.conteiner-criterios {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  position: relative;
+}
+
+.conteiner-criterios::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 430px;
+    width: 900px;  
+    height: 900px;
+    background-image: url("/img/pata-fundo-adocao.svg");
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+
+}
+
+.conteiner-criterios h1 {
+  font-size: 30px;
+  font-weight: 650;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.textos-criterios {
+  max-width: 85%;
+  margin: 0 auto;
+
+}
+
+.textos-criterios p {
+  font-size: 19px;
+  margin-bottom: 20px;
+  line-height: 1.9;
+}
+
+.textos-criterios p::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/correto.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+/* Cards */
+.fundo-pet-adocao {
+  background-color: rgb(190, 228, 249);
+}
+
+.conteiner-pet-adocao {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
+.conteiner-pet-adocao h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 650;
+}
+
+.conteiner-pet-adocao h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #fbfbfb;
+  margin: 10px 0 30px 0;
+}
+
+.cards-animais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card-animal {
+  flex: 1 1 250px;
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.card-animal h4 {
+  font-size: 20px;
+  max-width: 60%;
+  text-align: end;
+  margin-left: 50%;
+  padding: 0px 10px;
+  border-radius: 20px 20px 0 0;
+  background-color: #fbfbfb;
+}
+
+.card-animal h4::after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/pata-verde.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.card-animal img {
+  max-width: 100%;
+  border: 8px solid #fbfbfb;
+  border-radius: 30px;
+}
+
+.card-conteudo {
+  background-color: #fbfbfb;
+  padding-bottom: 20px;
+  border-radius: 20px 0px 20px 20px;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-card {
+  padding: 0px 10px;
+  display: grid;
+  gap: 20px;
+  margin-top: auto;
+}
+
+.footer-card .lista-info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-card button {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding: 8px;
+  color: #fbfbfb;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #43bcff;
+  cursor: pointer;
+}
+
+.lista-info-card li {
+    font-size: 18px;
+}
+
+.lista-info-card li span {
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffd833;
+  padding: 25px 0;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(/img/patas-footer-padrao.svg);
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.footer-esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-esquerda p {
+  font-size: 16px;
+  max-width: 40ch;
+  font-weight: 500;
+}
+
+.midia-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-img {
+  max-width: 140px;
+}
+
+.footer-img img {
+  max-width: 100%;
+}
+
+.footer-direita {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.footer-direita h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-direita ul li a {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333333;
+  transition: color 0.2s ease;
+}
+
+.footer-direita ul li a:hover {
+  color: #fbfbfb;
+}
+
+.footer-direitos {
+  font-size: 14px;
+  color: hsla(0, 0%, 20%, 0.769);
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #33333363;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 999;
+}
+
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #fbfbfb;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 16px #33333363;
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-pet-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-pet-info img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-pet-details p {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.historico {
+    text-align: left;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.historico h3 {
+    font-size: 20px;
+    color: #43BCFF;
+    margin-bottom: 10px;
+}
+
+.historico p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.modal-button-contact,
+.modal-button-close {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-button-contact {
+    background-color: #FCA11D;
+    color: #fbfbfb;
+}
+
+.modal-button-close {
+    background-color: #43BCFF;
+    color: #fbfbfb;
+}
