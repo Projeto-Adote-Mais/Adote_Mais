@@ -1,3 +1,18 @@
+const btnMobile = document.getElementById("btn-mobile");
+const navMobile = document.getElementById("nav-mobile");
+
+// Ativa nav mobile
+btnMobile.addEventListener("click", () => {
+  navMobile.classList.toggle("active");
+});
+
+// Esconde nav mobile com relação ao tamanho da janela
+window.addEventListener("resize", () => {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    navMobile.classList.remove("active");
+  }
+});
+
 const PET_DATA = {
     jade: {
       nome: "Jade",
@@ -9,7 +24,7 @@ const PET_DATA = {
       castrada: "Sim",
       vacina: "V4 e Antirrábica",
       historia: "Foi resgatada filhote, hoje está totalmente recuperada e sociável.",
-      img: "./../img/adocao/jade.svg"
+      img: "/img/jade.svg"
     },
     apollo: {
       nome: "Apollo",
@@ -21,7 +36,7 @@ const PET_DATA = {
       castrada: "Sim",
       vacina: "V8 e Antirrábica",
       historia: "Encontrado abandonado na rua, é muito dócil, brincalhão e adora correr no parque.",
-      img: "./../img/adocao/apollo.svg"
+      img: "/img/apollo.svg"
     },
     fred: {
       nome: "Fred",
@@ -33,7 +48,7 @@ const PET_DATA = {
       castrada: "Sim",
       vacina: "V10 e Antirrábica",
       historia: "Um cão de guarda muito amigável. Ideal para casa com quintal e experiência com cães de porte médio.",
-      img: "./../img/adocao/fred.svg"
+      img: "/img/fred.svg"
     }
   };
 
@@ -91,4 +106,8 @@ const PET_DATA = {
     });
   });
 
+const btnContinuar = document.querySelector("#btn-continuar");
 
+btnContinuar.addEventListener("click", () => {
+  window.location.href = "/pages/formulario_adocao.html";
+});

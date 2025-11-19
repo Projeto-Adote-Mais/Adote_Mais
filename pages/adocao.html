@@ -1,296 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="shortcut icon" href="./../img/icons8-pegada-de-gato-16.png" type="image/x-icon">
-    <link rel="stylesheet" href="./../css/adocao.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adoção</title>
-  </head>
-  <body>
-    <header>
-      <div class="cabecalho">
-        <div>
-          <img src="./../img/logo_laranja.svg" alt="Logo laranja" />
-        </div>
-        <nav>
-          <ul class="navegacao">
-            <li><a href="/">Início</a></li>
-            <li><a href="/">Sobre Nós</a></li>
-            <li><a href="/">Adoção</a></li>
-            <li><a href="/">Cuidados & Dicas</a></li>
-            <li><a href="/" class="pagina">Profissionais Parceiros</a></li>
-            <button>Login</button>
-            <button>Cadastrar</button>
-          </ul>
-        </nav>
+
+<head>
+  <link rel="shortcut icon" href="/img/logo_laranja.svg" type="image/svg">
+  <link rel="stylesheet" href="./../css/adocao.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adoção</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-header">
+        <img src="/img/logo_laranja.svg" alt="Logo Adote Mais">
       </div>
-    </header>
-    <main>
-      <section>
-        <div class="imagem-fundo">
-          <div class="criterio-adocao">
-            <h1>Critérios para adoção</h1>
-            <div class="conteudo-criterio">
-              <div class="lista-criterio">
-                <div>
-                  <img src="./../img/adocao/correto.svg" alt="correto" />
-                </div>
-                <p>
-                  Ser maior de 18 anos e apresentar documento de identificação
-                  com foto.
-                </p>
-              </div>
-              <div class="lista-criterio">
-                <div>
-                  <img src="./../img/adocao/correto.svg" alt="correto" />
-                </div>
-                <p>
-                  Comprovar residência fixa (por meio de comprovante de endereço
-                  recente).
-                </p>
-              </div>
-              <div class="lista-criterio">
-                <div>
-                  <img src="./../img/adocao/correto.svg" alt="correto" />
-                </div>
-                <p>
-                  Apresentar comprovante de renda que demonstre capacidade de
-                  manter o animal.
-                </p>
-              </div>
-              <div class="lista-criterio">
-                <div>
-                  <img src="./../img/adocao/correto.svg" alt="correto" />
-                </div>
-                <p>
-                  Concordar com visitas de acompanhamento pós - adoção,
-                  realizadas pela ONG responsável.
-                </p>
-              </div>
-              <div class="lista-criterio">
-                <div>
-                  <img src="./../img/adocao/correto.svg" alt="correto" />
-                </div>
-                <p>
-                  Assumir responsabilidade financeira pelos cuidados contínuos
-                  do animal (alimentação, higiene, vacinas e consultas
-                  veterinárias).
-                </p>
-              </div>
-              <div class="lista-criterio">
-                <div>
-                  <img src="./../img/adocao/correto.svg" alt="correto" />
-                </div>
-                <p>
-                  Garantir espaço físico adequado e seguro para o bem-estar do
-                  animal
-                </p>
-              </div>
-              <div class="lista-criterio">
-                <div>
-                  <img src="./../img/adocao/correto.svg" alt="correto" />
-                </div>
-                <p>
-                  Fornecer amor, atenção e cuidado diariamente, garantindo
-                  qualidade de vida.
-                </p>
-              </div>
-              <div class="lista-criterio">
-                <div>
-                  <img src="./../img/adocao/correto.svg" alt="correto" />
-                </div>
-                <p>
-                  Concordar em devolver o animal à ONG, caso não possa mais
-                  mantê-lo, evitando abandono.
-                </p>
-              </div>
-            </div>
-          </div>
+
+      <div class="hamburguer" id="btn-mobile" aria-label="Abrir Menu">
+        <img src="/img/icone-menu-hamburguer.svg" alt="Menu" id="icone-menu">
+      </div>
+
+      <nav aria-label="Navegação Primária" class="nav-desktop" id="nav-desktop">
+        <ul class="menu">
+          <li><a href="/index.html">Início</a></li>
+          <li><a href="/pages/sobre_nos.html">Sobre Nós</a></li>
+          <li><a href="/pages/adocao.html" class="active-pag">Adoção</a></li>
+          <li><a href="#">Cuidados & Dicas</a></li>
+          <li><a href="#">Profissionais Parceiros</a></li>
+        </ul>
+      </nav>
+
+      <div class="btn-header" id="btn-header">
+        <a href="/pages/login.html" class="btn-login">Login</a>
+        <a href="#" class="btn-cadastrar">Cadastrar</a>
+      </div>
+
+      <!-- Menu Mobile -->
+      <nav class="nav-mobile" id="nav-mobile">
+        <ul class="menu-mobile">
+          <li><a href="/index.html">Início</a></li>
+          <li><a href="/pages/sobre_nos.html">Sobre Nós</a></li>
+          <li><a href="/pages/adocao.html">Adoção</a></li>
+          <li><a href="#">Cuidados & Dicas</a></li>
+          <li><a href="#">Profissionais Parceiros</a></li>
+        </ul>
+
+        <div class="btn-mobile-area">
+          <a href="/pages/login.html" class="btn-login">Login</a>
+          <a href="#" class="btn-cadastrar">Cadastrar</a>
         </div>
-      </section>
-      <section class="fundo">
-        <div class="adocao">
-          <h2>Encontre seu novo companheiro</h2>
-          <h4>Adote um(a) amigo(a)</h4>
-          <div class="escolher-pet">
-            <div class="pet-card">
-              <div class="nome">
-                <p>Jade</p>
-                <img src="./../img/adocao/pata-verde.svg" alt="pata verde" />
-              </div>
-              <div class="pet-header">
-                <img src="./../img/adocao/jade.svg" alt="gato jade" />
-              </div>
-              <div class="pet-details">
-                <ul>
-                  <li><strong>Idade:</strong> 2 anos</li>
-                  <li><strong>Sexo:</strong> Fêmea</li>
-                  <li><strong>Porte:</strong> Médio</li>
-                </ul>
-                <button class="adotar-button" data-pet="jade">ADOTAR</button>
-              </div>
-            </div>
-            <div class="pet-card">
-              <div class="nome">
-                <p>Apollo</p>
-                <img src="./../img/adocao/pata-verde.svg" alt="pata verde" />
-              </div>
-              <div class="pet-header">
-                <img src="./../img/adocao/apollo.svg" alt="cachorro apollo" />
-              </div>
-              <div class="pet-details">
-                <ul>
-                  <li><strong>Idade:</strong> 3 anos</li>
-                  <li><strong>Sexo:</strong> Macho</li>
-                  <li><strong>Porte:</strong> Médio</li>
-                </ul>
-                <button class="adotar-button" data-pet="apollo">ADOTAR</button>
-              </div>
-            </div>
-            <div class="pet-card">
-              <div class="nome">
-                <p>Fred</p>
-                <img src="./../img/adocao/pata-verde.svg" alt="pata verde" />
-              </div>
-              <div class="pet-header">
-                <img src="./../img/adocao/fred.svg" alt="cachorro fred" />
-              </div>
-              <div class="pet-details">
-                <ul>
-                  <li><strong>Idade:</strong> 5 anos</li>
-                  <li><strong>Sexo:</strong> Macho</li>
-                  <li><strong>Porte:</strong> Médio</li>
-                </ul>
-                <button class="adotar-button" data-pet="fred">ADOTAR</button>
-              </div>
-            </div>
-          </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="conteiner-criterios">
+        <h1>Critérios para adoção</h1>
+        <div class="textos-criterios">
+          <p>
+            Ser maior de 18 anos e apresentar documento de identificação com foto.
+          </p>
+          <p>
+            Comprovar residência fixa (por meio de comprovante de endereço recente).
+          </p>
+          <p>
+            Apresentar comprovante de renda que demonstre capacidade de manter o animal.
+          </p>
+          <p>
+            Concordar com visitas de acompanhamento pós - adoção, realizadas pela ONG responsável.
+          </p>
+          <p>
+            Assumir responsabilidade financeira pelos cuidados contínuos do animal
+            (alimentação, higiene, vacinas e consultas veterinárias).
+          </p>
+          <p>
+            Garantir espaço físico adequado e seguro para o bem-estar do animal
+
+          </p>
+          <p>
+            Fornecer amor, atenção e cuidado diariamente, garantindo qualidade de vida.
+          </p>
+          <p>
+            Concordar em devolver o animal à ONG, caso não possa mais mantê-lo, evitando abandono
+          </p>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="imagem-pata">
-        <div class="rodape">
-          <div class="imagem-logo">
-            <img src="./../img/cuidados-e-dicas/Preto.svg" alt="Logo-preta" />
-            <p>Mais empatia, menos abandono.</p>
+      </div>
+    </section>
+
+    <section class="fundo-pet-adocao">
+      <div class="conteiner-pet-adocao">
+        <h2>Encontre seu novo companheiro</h2>
+        <h3>Adote um(a) amigo(a)</h3>
+        <div class="cards-animais">
+          <div class="card-animal">
+            <h4 class="nome-pet">Jade</h4>
+            <div class="card-conteudo">
+              <div>
+                <img src="/img/pet-criterios-adocao1.svg" alt="Gata Jade">
+              </div>
+              <div class="footer-card">
+                <ul class="lista-info-card">
+                  <li><span>Idade:</span> 2 anos</li>
+                  <li><span>Sexo:</span> Fêmea</li>
+                  <li><span>Porte:</span> Médio</li>
+                </ul>
+                <button class="adotar-button" data-pet="jade">Adotar</button>
+              </div>
+            </div>
           </div>
 
-          <div class="rodape-lista">
-            <div class="lista">
-              <h3>Projeto</h3>
-              <ul>
-                <li><a href="/">Sobre o projeto</a></li>
-                <li><a href="/">Como surgiu</a></li>
-                <li><a href="/">Missão, Visão e Valores</a></li>
-                <li><a href="/">Planos</a></li>
-              </ul>
-            </div>
-            <div class="lista">
-              <h3>Links úteis</h3>
-              <ul>
-                <li><a href="/">Adoção</a></li>
-                <li><a href="/">Cuidados e Dicas</a></li>
-                <li><a href="/">Profissionais Parceiros</a></li>
-                <li><a href="/">F.A.Q</a></li>
-              </ul>
-            </div>
-            <div class="lista">
-              <h3>Suporte ao Adotante</h3>
-              <ul>
-                <li><a href="/">Fale Conosco</a></li>
-                <li><a href="/">Termos de Uso</a></li>
-                <li><a href="/">Doações</a></li>
-                <li><a href="/">Política de Privacidade</a></li>
-              </ul>
-            </div>
-            <div class="lista">
-              <h3>Contato</h3>
-              <ul>
-                <li><a href="/">Projeto online — Brasil</a></li>
-                <li><a href="/">@adote_mais(Instragam)</a></li>
-                <li><a href="/">+55 11 4002-8922</a></li>
-                <li><a href="/">adotemais@outlook.com</a></li>
-              </ul>
+          <div class="card-animal">
+            <h4>Apollo</h4>
+            <div class="card-conteudo">
+              <div>
+                <img src="/img/pet-criterios-adocao2.svg" alt="Gata Jade">
+              </div>
+              <div class="footer-card">
+                <ul class="lista-info-card">
+                  <li><span>Idade:</span> 3 anos</li>
+                  <li><span>Sexo:</span> Macho</li>
+                  <li><span>Porte:</span> Médio</li>
+                </ul>
+                <button class="adotar-button" data-pet="apollo">Adotar</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="patrocinadores-e-redes-sociais">
-          <div class="redes-sociais">
-            <div class="logos">
+
+          <div class="card-animal">
+            <h4>Fred</h4>
+            <div class="card-conteudo">
               <div>
-                <a href="/">
-                  <img
-                    src="./../img/cuidados-e-dicas/facebook.svg"
-                    alt="Facebook"
-                  />
-                </a>
+                <img src="/img/pet-criterios-adocao3.svg" alt="Gata Jade">
               </div>
-              <div>
-                <a href="/">
-                  <img
-                    src="./../img/cuidados-e-dicas/instagram.svg"
-                    alt="Instragam"
-                  />
-                </a>
-              </div>
-              <div>
-                <a href="/">
-                  <img src="./../img/cuidados-e-dicas/x.svg" alt="X" />
-                </a>
-              </div>
-              <div>
-                <a href="/">
-                  <img
-                    src="./../img/cuidados-e-dicas/youtube.svg"
-                    alt="Youtube"
-                  />
-                </a>
+              <div class="footer-card">
+                <ul class="lista-info-card">
+                  <li><span>Idade:</span> 5 anos</li>
+                  <li><span>Sexo:</span> Macho</li>
+                  <li><span>Porte:</span> Médio</li>
+                </ul>
+                <button class="adotar-button" data-pet="fred">Adotar</button>
               </div>
             </div>
-            <p>© 2025 Adote+. Todos os direitos reservados</p>
-          </div>
-          <div class="patrocinadores">
-            <img
-              src="./../img/cuidados-e-dicas/patrocinadores.svg"
-              alt="patrocinadores"
-            />
           </div>
         </div>
       </div>
-    </footer>
-
-    <div class="modal-overlay" id="adocaoModal">
-      <div class="modal-content">
-        <h2>Ficha Animal</h2>
-        <div class="modal-pet-info">
-          <img src="" alt="Foto do Pet" id="modalPetImg" />
-          <div class="modal-pet-details">
-            <p><strong>Nome:</strong> <span id="modalNome"></span></p>
-            <p><strong>Idade:</strong> <span id="modalIdade"></span></p>
-            <p><strong>Sexo:</strong> <span id="modalSexo"></span></p>
-            <p><strong>Tipo:</strong> <span id="modalTipo"></span></p>
-            <p><strong>Raça:</strong> <span id="modalRaca"></span></p>
-          </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-esquerda">
+        <div class="footer-img"><img src="/img/logo-preta-footer.svg" alt="Logo Adote Mais"></div>
+        <p>
+          Incentivando a adoção responsável e promovendo o bem-estar animal.
+        </p>
+        <div class="midia-social">
+          <a href="#"><img src="/img/facebook-item-footer.svg" alt="Ícone do facebook"></a>
+          <a href="#"><img src="/img/instagram-item-footer.svg" alt="Ícone do Instagram"></a>
+          <a href="#"><img src="/img/x-item-footer.svg" alt="Ícone do X"></a>
+          <a href="#"><img src="/img/yt-item-footer.svg" alt="Ícone do Youtube"></i></a>
         </div>
-
-        <div class="historico">
-          <h3>Histórico da <span id="modalNomeHistorico"></span></h3>
-          <p><strong>ONG:</strong> <span id="modalONG"></span></p>
-          <p><strong>Castrada:</strong> <span id="modalCastrada"></span></p>
-          <p><strong>Vacina:</strong> <span id="modalVacina"></span></p>
-          <p><strong>História:</strong> <span id="modalHistoria"></span></p>
-        </div>
-
-        <div class="modal-actions">
-          <button class="modal-button-contact">CONTINUAR</button>
-          <button class="modal-button-close" id="fecharModal">VOLTAR</button>
-        </div>
+      </div>
+      <div class="footer-direita">
+        <ul>
+          <h4>Links úteis</h4>
+          <li><a href="/index.html">Início</a></li>
+          <li><a href="/pages/sobre_nos.html">Sobre Nós</a></li>
+          <li><a href="#">Adoção</a></li>
+          <li><a href="#">Cuidados & Dicas</a></li>
+          <li><a href="#">Profissionais</a></li>
+        </ul>
+        <ul>
+          <h4>Suporte</h4>
+          <li><a href="#">F.A.Q</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Doações</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+        <ul>
+          <h4>Contato</h4>
+          <li><a href="#">Projeto online — Brasil</a></li>
+          <li><a href="#">@adote_mais (Instragam)</a></li>
+          <li><a href="#">+55 11 4002-8922</a></li>
+          <li><a href="#">Adotemais@outlook.com</a></li>
+        </ul>
       </div>
     </div>
+    <p class="footer-direitos">
+      © 2025 Adote+. Todos os direitos reservados
+    </p>
+  </footer>
 
-    <script src="./../js/adocao.js"></script>
-  </body>
+  <!-- Modal -->
+  <div class="modal-overlay" id="adocaoModal">
+    <div class="modal-content">
+      <h2>Ficha Animal</h2>
+      <div class="modal-pet-info">
+        <img src="" alt="Foto do Pet" id="modalPetImg" />
+        <div class="modal-pet-details">
+          <p><strong>Nome:</strong> <span id="modalNome"></span></p>
+          <p><strong>Idade:</strong> <span id="modalIdade"></span></p>
+          <p><strong>Sexo:</strong> <span id="modalSexo"></span></p>
+          <p><strong>Tipo:</strong> <span id="modalTipo"></span></p>
+          <p><strong>Raça:</strong> <span id="modalRaca"></span></p>
+        </div>
+      </div>
+
+      <div class="historico">
+        <h3>Histórico do(a) <span id="modalNomeHistorico"></span></h3>
+        <p><strong>ONG:</strong> <span id="modalONG"></span></p>
+        <p><strong>Castrada:</strong> <span id="modalCastrada"></span></p>
+        <p><strong>Vacina:</strong> <span id="modalVacina"></span></p>
+        <p><strong>História:</strong> <span id="modalHistoria"></span></p>
+      </div>
+
+      <div class="modal-actions">
+        <button class="modal-button-contact" id="btn-continuar">CONTINUAR</button>
+        <button class="modal-button-close" id="fecharModal">VOLTAR</button>
+      </div>
+    </div>
+    <script src="/js/adocao.js"></script>
+</body>
 </html>
