@@ -21,6 +21,6 @@ forms.addEventListener("submit", redireciona);
 function redireciona(event) {
     event.preventDefault();
     setTimeout(() => {
-        window.location.replace("../index.html"); 
+        window.location.replace("../pages/perfil.html"); 
     }, 1000);
 }
