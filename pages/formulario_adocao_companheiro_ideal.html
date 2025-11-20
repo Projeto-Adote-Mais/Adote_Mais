@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="shortcut icon" href="/img/logo_laranja.svg" type="image/svg">
     <link rel="stylesheet" href="/css/formulario_adocao_ci.css">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Adoção | Perfil do Animal Desejado</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header-conteiner">
@@ -17,7 +19,8 @@
                 Perfil do Animal Desejado
             </h1>
             <p class="paragrafo-mensagem">
-                Antes de encontrar o amigo ideal, nos conte um pouco sobre o tipo de companheiro que você procura. Assim, ajudamos a garantir uma adoção feliz e harmoniosa!
+                Antes de encontrar o amigo ideal, nos conte um pouco sobre o tipo de companheiro que você procura.
+                Assim, ajudamos a garantir uma adoção feliz e harmoniosa!
             </p>
         </div>
     </header>
@@ -106,11 +109,12 @@
                             <input type="radio" name="animal-sexo" id="indiferente" value="indiferente">
                             <label for="indiferente">Indiferente</label>
                         </div>
-                        
+
                     </fieldset>
 
-                   <fieldset class="grupo-pergunta">
-                        <legend class="titulo-pergunta">Temperamento desejado (Marque as opções que mais se encaixam com o que você busca): </legend>
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">Temperamento desejado (Marque as opções que mais se encaixam com
+                            o que você busca): </legend>
                         <div>
                             <input type="checkbox" name="temperamento[]" id="calmo" value="calmo">
                             <label for="calmo">Calmo e tranquilo</label>
@@ -138,15 +142,18 @@
                     </fieldset>
 
                     <fieldset class="grupo-pergunta">
-                        <legend class="titulo-pergunta">Você está disposto(a) a adotar um animal com necessidades especiais?</legend>
+                        <legend class="titulo-pergunta">Você está disposto(a) a adotar um animal com necessidades
+                            especiais?</legend>
 
                         <div>
-                            <input type="radio" name="necessidades-especiais-animal" id="necessidades-sim" value="sim" required>
+                            <input type="radio" name="necessidades-especiais-animal" id="necessidades-sim" value="sim"
+                                required>
                             <label for="necessidades-sim">Sim</label>
                         </div>
 
                         <div>
-                            <input type="radio" name="necessidades-especiais-animal" id="necessidades-talvez" value="talvez">
+                            <input type="radio" name="necessidades-especiais-animal" id="necessidades-talvez"
+                                value="talvez">
                             <label for="necessidades-talvez">Talvez, depende do caso</label>
                         </div>
 
@@ -154,17 +161,19 @@
                             <input type="radio" name="necessidades-especiais-animal" id="necessidades-nao" value="nao">
                             <label for="necessidades-nao">Não</label>
                         </div>
-                        
+
                     </fieldset>
 
                     <div class="grupo-campo">
                         <label for="caracteristicas">Há alguma característica específica que você procura?</label>
-                        <textarea name="caracteristicas" id="caracteristicas" rows="7" placeholder="Ex: pelagem curta, idade aproximada, raça, comportamento, etc."></textarea>
+                        <textarea name="caracteristicas" id="caracteristicas" rows="7"
+                            placeholder="Ex: pelagem curta, idade aproximada, raça, comportamento, etc."></textarea>
                     </div>
 
                     <div class="grupo-termo">
                         <input type="checkbox" name="info-verdadeiras" id="info-verdadeiras" required>
-                        <label for="info-verdadeiras">Declaro que todas as informações prestadas neste formulário são verdadeiras e correspondem à realidade.</label>
+                        <label for="info-verdadeiras">Declaro que todas as informações prestadas neste formulário são
+                            verdadeiras e correspondem à realidade.</label>
                     </div>
 
                     <div class="btn-conteiner">
@@ -172,7 +181,8 @@
                             Enviar
                         </button>
 
-                        <a href="formulario_adocao_estrutura_residencial.html" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="formulario_adocao_estrutura_residencial.html" class="btn-voltar"><i
+                                class="fa-solid fa-arrow-left"></i></a>
                     </div>
                 </form>
             </div>
@@ -182,7 +192,22 @@
         <p>Conectando histórias, unindo corações!</p>
     </footer>
 
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src=" https://cdn.userway.org/widget.js " data-account=" RmAYIi7rVF "></script>
+
     <script src="/js/forms_adocao_ci.js"></script>
     <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
