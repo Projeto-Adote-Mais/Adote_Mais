@@ -524,17 +524,18 @@ button:hover {
   content: "";
   position: absolute;
   inset: 0;
-  top: -53%;
+  top: -95%;
   background-image: url("/img/pets-footer-inicio.png");
   background-repeat: no-repeat;
   background-size: contain;
+  pointer-events: none;
 }
 
 .footer-container::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(/img/patas-footer-padrao.svg);
+  background-image: url("/img/patas-footer-padrao.svg");
   opacity: 0.4;
   background-repeat: no-repeat;
   background-size: contain;
@@ -598,7 +599,7 @@ button:hover {
 
 @media (max-width: 1066px) {
   .footer-container::before {
-    top: -51%;
+    top: -95%;
   }
 }
 
@@ -622,13 +623,13 @@ button:hover {
 
 @media (max-width: 996px) {
   .footer-container::before {
-    top: -48%;
+    top: -45%;
   }
 }
 
 @media (max-width: 957px) {
   .footer-container::before {
-    top: -46%;
+    top: -40%;
   }
 }
 

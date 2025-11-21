@@ -491,35 +491,3 @@ body {
     font-size: 22px;
   }
 }
-
-/* @media (max-width: 510px) {
-  .titulo-parceiros h1 {
-    text-transform: uppercase;
-    font-size: 40px;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .titulo-parceiros span {
-    text-transform: initial;
-    color: #fca11d;
-    font-weight: 500;
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 396px) {
-  .titulo-parceiros h1 {
-    text-transform: uppercase;
-    font-size: 28px;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .titulo-parceiros span {
-    text-transform: initial;
-    color: #fca11d;
-    font-weight: 500;
-    font-size: 22px;
-  }
-} */

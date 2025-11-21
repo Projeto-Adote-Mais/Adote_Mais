@@ -10,7 +10,7 @@ body::after {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url(/img/fundo-agradecimento-adocao.svg);
+  background-image: url("/img/fundo-agradecimento-adocao.svg");
   background-position: center 5%;
   background-size: cover;
   opacity: 0.2;

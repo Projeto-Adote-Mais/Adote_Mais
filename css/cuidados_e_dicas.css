@@ -412,7 +412,7 @@ h2.amarelo {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(/img/patas-footer-padrao.svg);
+  background-image: url("/img/patas-footer-padrao.svg");
   opacity: 0.4;
   background-repeat: no-repeat;
   background-size: contain;

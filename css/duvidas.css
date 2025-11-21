@@ -289,7 +289,7 @@ details:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(/img/patas-footer-padrao.svg);
+  background-image: url("/img/patas-footer-padrao.svg");
   opacity: 0.4;
   background-repeat: no-repeat;
   background-size: contain;
@@ -350,6 +350,45 @@ details:hover {
   text-align: center;
   padding-top: 20px;
 }
+
+@media (max-width: 1027px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-esquerda {
+    align-items: center;
+  }
+
+  .footer-esquerda p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container::after {
+    background-size: cover;
+  }
+
+  .footer-esquerda p {
+    font-size: 14px;
+  }
+
+  .footer-direita {
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .footer-direita h4 {
+    text-align: center;
+  }
+
+  .footer-direita ul li {
+    text-align: center;
+  }
+}
+
 
 @media (max-width: 430px) {
   body {
