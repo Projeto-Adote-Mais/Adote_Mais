@@ -2,22 +2,66 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="shortcut icon" href="img/logo_laranja.svg" type="image/svg">
+    <link rel="stylesheet" href="./css/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>Início</title>
 </head>
 
 <body>
-  
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-header">
+                <img src="/img/logo_laranja.svg" alt="Logo Adote Mais">
+            </div>
+
+            <div class="hamburguer" id="btn-mobile" aria-label="Abrir Menu">
+                <img src="/img/icone-menu-hamburguer.svg" alt="Menu" id="icone-menu">
+            </div>
+
+            <nav aria-label="Navegação Primária" class="nav-desktop" id="nav-desktop">
+                <ul class="menu">
+                    <li><a href="/index.html">Início</a></li>
+                    <li><a href="/pages/sobre_nos.html" class="active-pag">Sobre Nós</a></li>
+                    <li><a href="/pages/adocao.html">Adoção</a></li>
+                    <li><a href="/pages/cuidados_e_dicas.html">Cuidados & Dicas</a></li>
+                    <li><a href="/pages/profissionais_parceiros.html">Profissionais Parceiros</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-header" id="btn-header">
+                <a href="/pages/login.html" class="btn-login">Login</a>
+                <a href="/pages/cadastro.html" class="btn-cadastrar">Cadastrar</a>
+            </div>
+
+            <!-- Menu Mobile -->
+            <nav class="nav-mobile" id="nav-mobile">
+                <ul class="menu-mobile">
+                    <li><a href="/index.html">Início</a></li>
+                    <li><a href="/pages/sobre_nos.html">Sobre Nós</a></li>
+                    <li><a href="/pages/adocao.html">Adoção</a></li>
+                    <li><a href="/pages/cuidados_e_dicas.html">Cuidados & Dicas</a></li>
+                    <li><a href="/pages/profissionais_parceiros.html">Profissionais Parceiros</a></li>
+                </ul>
+
+                <div class="btn-mobile-area">
+                    <a href="/pages/login.html" class="btn-login">Login</a>
+                    <a href="/pages/cadastro.html" class="btn-cadastrar">Cadastrar</a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
     <main>
         <section class="banner">
-
-            <figure>
-                <img class="banner_img" src="./img/Dezembro.svg"
-                    alt="Um banner em homenagem ao dezembro verde, uma campanha de conscientização brasileira focada no combate ao abandono e aos maus-tratos de animais">
-            </figure>
-
+            <div class="banner-conteiner">
+                <figure>
+                    <img class="banner_img" src="./img/Dezembro.svg"
+                        alt="Um banner em homenagem ao dezembro verde, uma campanha de conscientização brasileira focada no combate ao abandono e aos maus-tratos de animais">
+                </figure>
+            </div>
         </section>
 
         <section class="adocao">
@@ -35,7 +79,7 @@
                 </div>
 
                 <figure class="dog_img">
-                    <img src="./img/dog_img.svg" alt="Cachorrro fofo, com pata laranja atrás">
+                    <img src="/img/dog_img.png" alt="Cachorrro fofo, com pata laranja atrás">
                 </figure>
 
             </div>
@@ -44,11 +88,11 @@
             <div class="container_emocional">
 
                 <figure class="Pessoa">
-                    <img src="./img/pessoadog.svg" alt="Pessoa com seu cachorro de apoio">
+                    <img src="./img/pessoadog.png" alt="Pessoa com seu cachorro de apoio">
                 </figure>
 
                 <div class="text_emocional">
-                    <h1>Parceiros Emocionais</h1>
+                    <h2>Parceiros Emocionais</h2>
                     <p>Contamos com o apoio de profissionais parceiros — como veterinários e
                         adestradores, que oferecem orientações e suporte para quem está adotando ou já
                         tem um bichinho em casa. Nosso propósito é transformar a vida de animais em
@@ -61,95 +105,142 @@
 
         </section>
 
-        <section class="depoimento">
-            <div class="formasab"></div>
-            <div class="text_comentario">
-                <h1>DEPOIMENTOS</h1>
-            </div>
+        <section>
+            <div class="depoimento">
+                <div class="text_comentario">
+                    <h2>DEPOIMENTOS</h2>
+                </div>
 
-            <div class="container_comentarios">
-                <article class="card_verde">
-                    <figure>
-                        <img src="../Adote_Mais/img/perfilA.svg" alt="Foto de Juliane Pereira">
-                        <figcaption>Juliane Pereira</figcaption>
-                    </figure>
-                    <p class="comentarios">
-                        Quando adotei o meu cachorro, fiquei super perdida! Eu não sabia o que comprar, como cuidar
-                        direito, nem como adaptar ele à casa nova. Aí descobri que o próprio site tem uma parte com
-                        suporte, indicação de veterinários e até adaptadores de confiança!💕
-                    </p>
-                </article>
+                <div class="container_comentarios">
+                    <article class="card_verde">
+                        <figure>
+                            <img src="/img/perfilA.svg" alt="Foto de Juliane Pereira">
+                            <figcaption>Juliane Pereira</figcaption>
+                        </figure>
+                        <p class="comentarios">
+                            Quando adotei o meu cachorro, fiquei super perdida! Eu não sabia o que comprar, como cuidar
+                            direito, nem como adaptar ele à casa nova. Aí descobri que o próprio site tem uma parte com
+                            suporte, indicação de veterinários e até adaptadores de confiança!💕
+                        </p>
+                    </article>
 
-                <article class="card_azul">
-                    <figure>
-                        <img src="../Adote_Mais/img/perfilB.svg" alt="Foto de Larissa Alencar">
-                        <figcaption>Larissa Alencar</figcaption>
-                    </figure>
-                    <p class="comentarios">
-                        Tenho um papagaio há anos e fiquei encantada com o quanto o site fala sobre responsabilidade e
-                        respeito aos bichinhos. Mesmo quem já tem um pet encontra dicas maravilhosas aqui. É um espaço
-                        cheio de empatia e propósito!
-                    </p>
-                </article>
+                    <article class="card_azul">
+                        <figure>
+                            <img src="/img/perfilB.svg" alt="Foto de Larissa Alencar">
+                            <figcaption>Larissa Alencar</figcaption>
+                        </figure>
+                        <p class="comentarios">
+                            Tenho um papagaio há anos e fiquei encantada com o quanto o site fala sobre responsabilidade
+                            e
+                            respeito aos bichinhos. Mesmo quem já tem um pet encontra dicas maravilhosas aqui. É um
+                            espaço
+                            cheio de empatia e propósito!
+                        </p>
+                    </article>
 
-                <article class="card_amarelo">
-                    <figure>
-                        <img src="../Adote_Mais/img/perfilC.svg" alt="Foto de Marina Silva">
-                        <figcaption>Marina Silva</figcaption>
-                    </figure>
-                    <p class="comentarios">
-                        Sério, eu tava há meses procurando um cachorro pra adotar e não achava nada confiável. Aí
-                        encontrei o site, conheci uma ONG parceira e foi através dela que adotei a Luna! Tudo super
-                        organizado e com orientação certinha.
-                    </p>
-                </article>
+                    <article class="card_amarelo">
+                        <figure>
+                            <img src="/img/perfilC.svg" alt="Foto de Marina Silva">
+                            <figcaption>Marina Silva</figcaption>
+                        </figure>
+                        <p class="comentarios">
+                            Sério, eu tava há meses procurando um cachorro pra adotar e não achava nada confiável. Aí
+                            encontrei o site, conheci uma ONG parceira e foi através dela que adotei a Luna! Tudo super
+                            organizado e com orientação certinha.
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
         <section class="faixa">
-             <div class="patro_faixa">
+            <div class="patro_faixa">
                 <figure class="patinha">
-                        <img class="patro_pata" src="./img/pataamarela.svg" alt="Pata">
-                    </figure>
-                    <div class="patro_title">
-                        <h2>Patrocinadores e Apoiadores</h2>
-                        <p>Quem acredita na nossa causa</p>
-                    </div>
+                    <img class="patro_pata" src="./img/pataamarela.svg" alt="Pata">
+                </figure>
+                <div class="patro_title">
+                    <h2>Patrocinadores e Apoiadores</h2>
+                    <p>Quem acredita na nossa causa</p>
                 </div>
+            </div>
         </section>
         <section class="patrocinio">
             <div class="patro_container">
-            
-            <div class="patro_grid">
-                <div class="patro_item">
-                    <figure>
-                        <img class="patro_logo" src="./img/petcare.svg" alt="PetCare">
-                    </figure>
-                    <p>“A PetCare acredita no amor entre humanos e animais”</p>
+
+                <div class="patro_grid">
+                    <div class="patro_item">
+                        <figure>
+                            <img class="patro_logo" src="./img/petcare.svg" alt="PetCare">
+                        </figure>
+                        <p>“A PetCare acredita no amor entre humanos e animais”</p>
+
+                    </div>
+
+                    <div class="patro_item">
+                        <figure>
+                            <img class="patro_logo" src="./img/casadaracao.svg" alt="CasaDaRacao">
+                        </figure>
+                        <p>“Apoia o Adote+ porque acredita que o amor também se alimenta”</p>
+                    </div>
+
+                    <div class="patro_item">
+                        <figure>
+                            <img class="patro_logo" src="./img/petfood.svg" alt="PetFood">
+                        </figure>
+                        <p>“A PetFood acredita que todo animal merece um prato cheio e um coração acolhido.”</p>
+
+                    </div>
 
                 </div>
-
-                <div class="patro_item">
-                    <figure>
-                        <img class="patro_logo" src="./img/casadaracao.svg" alt="CasaDaRacao">
-                    </figure>
-                    <p>“Apoia o Adote+ porque acredita que o amor também se alimenta”</p>
-                </div>
-
-                <div class="patro_item">
-                    <figure>
-                        <img class="patro_logo" src="./img/petfood.svg" alt="PetFood">
-                    </figure>
-                    <p>“A PetFood acredita que todo animal merece um prato cheio e um coração acolhido.”</p>
-
-                </div>
-            
-        </div>
+            </div>
         </section>
-
-
     </main>
 
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-esquerda">
+                <div class="footer-img"><img src="/img/logo-preta-footer.svg" alt="Logo Adote Mais"></div>
+                <p>
+                    Incentivando a adoção responsável e promovendo o bem-estar animal.
+                </p>
+                <div class="midia-social">
+                    <a href="#"><img src="/img/facebook-item-footer.svg" alt="Ícone do facebook"></a>
+                    <a href="#"><img src="/img/instagram-item-footer.svg" alt="Ícone do Instagram"></a>
+                    <a href="#"><img src="/img/x-item-footer.svg" alt="Ícone do X"></a>
+                    <a href="#"><img src="/img/yt-item-footer.svg" alt="Ícone do Youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-direita">
+                <ul>
+                    <h4>Links úteis</h4>
+                    <li><a href="/index.html">Início</a></li>
+                    <li><a href="/pages/sobre_nos.html">Sobre Nós</a></li>
+                    <li><a href="/pages/adocao.html">Adoção</a></li>
+                    <li><a href="/pages/cuidados_e_dicas.html">Cuidados & Dicas</a></li>
+                    <li><a href="/pages/profissionais_parceiros.html">Profissionais</a></li>
+                </ul>
+                <ul>
+                    <h4>Suporte</h4>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Doações</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+                <ul>
+                    <h4>Contato</h4>
+                    <li><a href="#">Projeto online — Brasil</a></li>
+                    <li><a href="#">@adote_mais (Instragam)</a></li>
+                    <li><a href="#">+55 11 4002-8922</a></li>
+                    <li><a href="#">Adotemais@outlook.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-direitos">
+            © 2025 Adote+. Todos os direitos reservados
+        </p>
+    </footer>
+
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
-

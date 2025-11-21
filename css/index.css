@@ -1,66 +1,232 @@
 @import url(./reset.css);
 
-*body {
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
   background-color: #fbfbfb;
+  color: #333333;
+}
+
+/* Header */
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  position: relative;
+  gap: 15px;
+}
+
+.logo-header {
+  max-width: 65px;
+}
+
+.logo-header img {
+  max-width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu a {
+  padding: 5px 0;
+  font-size: 17px;
+  color: #333333;
+  font-weight: 500;
+  position: relative;
+}
+
+.menu a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px 1px;
+  background-color: #ffd833;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.menu a:hover::before {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.menu a.active-pag::before {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.btn-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn-header a {
+  padding: 4px 16px;
+  font-size: 17px;
+  color: #fbfbfb;
+  font-weight: 500;
+  background-color: #43bcff;
+  border-radius: 8px;
+  border: 2px solid #43bcff;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn-header a:hover {
+  color: #43bcff;
+  background-color: transparent;
+}
+
+/* Menu mobile */
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  background: #fbfbfb;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 12px 10px #33333311;
+  z-index: 1;
+}
+
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-mobile li a {
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+  color: #333333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.menu-mobile li a:hover {
+  transform: scale(1.02);
+  color: #43bcff;
+}
+
+.btn-mobile-area {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.btn-mobile-area a {
+  padding: 4px 16px;
+  font-size: 17px;
+  color: #fbfbfb;
+  font-weight: 500;
+  background-color: #43bcff;
+  border-radius: 8px;
+  border: 2px solid #43bcff;
+  text-align: center;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn-mobile-area a:hover {
+  color: #43bcff;
+  background-color: transparent;
+}
+
+.active {
+  display: block;
+}
+
+@media (max-width: 990px) {
+  .btn-header,
+  .nav-desktop {
+    display: none;
+  }
+
+  .hamburguer {
+    display: block;
+  }
 }
 
 .banner {
-  margin-top: 40px;
   background-color: #8ad83f;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.banner_img {
+
+.banner-conteiner {
   max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
 }
+
+.banner_img {
+  display: block;
+  max-width: 100%;
+}
+
 .container_adocao::after {
   content: "";
   position: absolute;
   inset: 0;
   background-image: url(./../img/detalhe.svg);
-  background-position: center 195%;
+  background-position: center 80%;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
 }
+
 .container_adocao {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1100px;
+  padding: 20px;
   align-items: center;
   margin: 0px auto;
-  margin-bottom: -140px;
 }
+
 .dog_img img {
+  display: block;
   max-width: 100%;
 }
-.text {
-  color: #232323;
-}
+
 .text h1 {
   font-size: 40px;
   margin-bottom: 25px;
 }
+
 .text p {
   margin-bottom: 25px;
 }
-.detalhe_img {
-  position: absolute;
-  top: 0;
-  left: 200px;
-  z-index: -1;
-}
-.detalhe_img img {
-  max-width: 1100px;
-  position: relative;
-  bottom: -380px;
-  right: 100px;
-  width: auto;
-  height: 2000px;
-}
+
 .text button {
   font-size: 15px;
   background-color: #43bcff;
@@ -73,6 +239,7 @@
   font-weight: 600;
   transition: 0.3s ease;
 }
+
 button:hover {
   font-size: 15px;
   background-color: #43bcff;
@@ -85,6 +252,7 @@ button:hover {
   font-weight: 600;
   transition: 0.3s ease;
 }
+
 button:hover {
   background-color: #ffd833;
   box-shadow: 0 4px 10px #0000009b;
@@ -98,30 +266,29 @@ button:hover {
   grid-template-columns: 1fr 1fr;
   max-width: 1100px;
   margin: 0px auto;
+  padding: 20px;
   align-items: center;
   gap: 25px;
   text-align: right;
 }
+
 .Pessoa img {
+  display: block;
   max-width: 100%;
 }
 
-.text_emocional {
-  color: #232323;
-}
-.text_emocional h1 {
+.text_emocional h2 {
   font-size: 40px;
   margin-bottom: 25px;
 }
+
 .text_emocional p {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .container_comentarios {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 1100px;
-  margin: 0px auto;
   align-items: center;
   gap: 25px;
   text-align: center;
@@ -186,7 +353,7 @@ button:hover {
   margin-top: 20px;
   font-size: 15px;
   line-height: 20px;
-  color: #444;
+  color: #333;
 }
 
 .card_verde {
@@ -213,29 +380,29 @@ button:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px #00000030;
 }
-.faixa{
+
+.faixa {
   background-color: #84d444;
 }
-.patro_faixa{
+
+.patro_faixa {
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
- 
-}
-.patro_container{
-max-width: 1100px;
-margin: 0 auto;  
 }
 
-  .patrocinio {
-  width: 100%;
+.patro_container {
+  max-width: 1100px;
+  margin: 30px auto 100px auto;
+}
+
+.patrocinio {
   display: grid;
   grid-template-columns: auto;
   align-items: center;
   position: relative;
   margin: 0px;
-  
-}  
+}
 
 .patinha {
   position: absolute;
@@ -248,27 +415,29 @@ margin: 0 auto;
   width: 300px;
   height: auto;
   padding: 0px;
-
 }
-.patro_title {    
-  text-align: left;     
+
+.patro_title {
+  text-align: left;
   color: #2a4510;
   z-index: 1;
   padding: 45px;
   margin-left: 308px;
- 
 }
-.patro_title h2{
-    font-size: 40px;
+
+.patro_title h2 {
+  font-size: 40px;
 }
-.patro_title p{
-    font-size: 30px;
-} 
+
+.patro_title p {
+  font-size: 30px;
+}
+
 .patro_grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 40px; 
-  justify-items: center; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
   margin: 90px auto;
   max-width: 100%;
   text-align: center;
@@ -282,7 +451,6 @@ margin: 0 auto;
 
 .patro_item:hover {
   transform: translateY(-80px) scale(1.05);
-  
 }
 
 .patro_logo {
@@ -298,94 +466,230 @@ margin: 0 auto;
 }
 
 .depoimento {
-    position: relative;
-}
-
-.formasab {
-    position: absolute;
-    inset: 0;       /* faz essa div ocupar toda a seção */
-    z-index: 0;     /* cria contexto para os ::before e ::after */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Forma amarela */
-.formasab::before {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 380px;
-    top: 10px;
-    left: -10px;
-    background-image: url("../img/formaA.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
+.depoimento::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 380px;
+  height: 380px;
+  top: 20%;
+  background-image: url("../img/formaA.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 /* Forma laranja */
-.formasab::after {
-    content: "";
-    position: absolute;
-    width: 560px;
-    height: 500px;
-    top: 250px;
-    right: -280px;
-    background-image: url("../img/formaB.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
- @media (max-width: 430px) {
-.banner_img {
-  max-width: 460px;
-}
-.container_adocao::after {
+.depoimento::after {
   content: "";
   position: absolute;
-  bottom: 290px;
- top: 50px;
+  width: 560px;
+  height: 500px;
+  top: 40%;
+  right: -280px;
+  background-image: url("../img/formaB.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   z-index: -1;
 }
+
+/* Footer */
+.footer {
+  background-color: #ffd833;
+  padding: 25px 0;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-container::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: -53%;
+  background-image: url("/img/pets-footer-inicio.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(/img/patas-footer-padrao.svg);
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.footer-esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-esquerda p {
+  font-size: 16px;
+  max-width: 40ch;
+  font-weight: 500;
+}
+
+.midia-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-img {
+  max-width: 140px;
+}
+
+.footer-img img {
+  max-width: 100%;
+}
+
+.footer-direita {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.footer-direita h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-direita ul li a {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333333;
+  transition: color 0.2s ease;
+}
+
+.footer-direita ul li a:hover {
+  color: #fbfbfb;
+}
+
+.footer-direitos {
+  font-size: 14px;
+  color: hsla(0, 0%, 20%, 0.769);
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media (max-width: 1027px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-esquerda {
+    align-items: center;
+  }
+
+  .footer-esquerda p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container::after {
+    background-size: cover;
+  }
+
+  .footer-esquerda p {
+    font-size: 14px;
+  }
+
+  .footer-direita {
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .footer-direita h4 {
+    text-align: center;
+  }
+
+  .footer-direita ul li {
+    text-align: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .banner_img {
+    max-width: 460px;
+  }
+  .container_adocao::after {
+    content: "";
+    position: absolute;
+    bottom: 290px;
+    top: 50px;
+    z-index: -1;
+  }
 
   .container_adocao {
     grid-template-columns: 1fr;
     text-align: center;
-    margin-bottom: 0; 
+    margin-bottom: 0;
     padding: 0 20px;
   }
 
   .dog_img {
-    order: -1; 
-    
+    order: -1;
   }
+
   .dog_img img {
-    width: 1000px; 
+    width: 1000px;
     max-width: 90%;
     position: relative;
     right: 30px;
-   
   }
 
   .text h1 {
     font-size: 26px;
     margin-top: 20px;
   }
+
   .text p {
     font-size: 14px;
     margin-bottom: 20px;
   }
+
   .text button {
     padding: 12px 26px;
     font-size: 14px;
   }
-.container_emocional {
-    grid-template-columns: 1fr; 
-    text-align: center;         
-    padding: 0 20px;            
+
+  .container_emocional {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 0 20px;
   }
+
   .text_emocional h1 {
-    font-size: 28px;          
+    font-size: 28px;
     margin-bottom: 15px;
   }
+
   .container_comentarios {
     grid-template-columns: 1fr;
     gap: 25px;
@@ -415,7 +719,7 @@ margin: 0 auto;
     display: none;
   }
 
- .patro_title {
+  .patro_title {
     margin-left: 0;
     padding: 20px;
     text-align: left;
@@ -431,8 +735,8 @@ margin: 0 auto;
 
   /* patrocinadores um embaixo do outro */
   .patro_grid {
-    grid-template-columns: 1fr; 
-    gap: 25px; 
+    grid-template-columns: 1fr;
+    gap: 25px;
     margin: 40px auto;
     padding: 0 20px;
   }
@@ -445,30 +749,27 @@ margin: 0 auto;
     width: 140px;
   }
 
-  .formasab::before {
+  .depoimento::before {
     position: absolute;
     width: 320px;
     height: 380px;
     top: 100px;
     left: -10px;
-  
-}
+  }
 
-/* Forma laranja */
-.formasab::after {
- 
+  /* Forma laranja */
+  .depoimento::after {
     position: absolute;
     width: 560px;
     height: 1000px;
     top: 750px;
     right: -290px;
-    
+  }
+
+  .text_comentario {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 60px 0 100px 0;
+    text-align: center;
+  }
 }
-.text_comentario {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 60px 0 100px 0;
-  text-align: center;
- }
- }
- 
