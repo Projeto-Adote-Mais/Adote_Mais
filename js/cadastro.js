@@ -61,7 +61,7 @@ function limparMensagem() {
   msg.style.display = "none";
 }
 
-// Redireciona 
+// Direciona para a próxima página
 function redireciona(){
     exibirMensagem("Conta criada com sucesso!");
     setTimeout(() => {

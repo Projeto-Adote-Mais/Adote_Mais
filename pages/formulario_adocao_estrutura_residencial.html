@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="/img/logo_laranja.svg" type="image/svg">
+    <link rel="stylesheet" href="/css/formulario_adocao_er.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Adoção | Estrutura Residencial</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-conteiner">
+            <div class="header-logo">
+                <img src="/img/logo-branca-laranja.svg" alt="Logo Adote Mais">
+            </div>
+            <h1 class="titulo-forms">
+                Estrutura Residencial
+            </h1>
+            <p class="paragrafo-mensagem">
+                Antes de conhecer o seu futuro companheiro, conte um pouquinho sobre o lugar onde ele vai morar. Assim,
+                conseguimos garantir o melhor para ambos!
+            </p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="forms-conteiner">
+                <h3 class="titulo-residencial">Conhecendo o novo lar</h3>
+                <form class="forms">
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">O tipo da moradia é:</legend>
+
+                        <div>
+                            <input type="radio" name="moradia-cliente" id="moradia-propria" value="propria" required>
+                            <label for="moradia-propria">Casa ou Apartamento próprio</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="moradia-cliente" id="moradia-alugada" value="alugada">
+                            <label for="moradia-alugada">Casa ou Apartamento alugado</label>
+                        </div>
+                    </fieldset>
+                    <div class="esconder" id="bloco-moradia-autorizacao">
+                        <fieldset class="grupo-pergunta ">
+                            <legend class="titulo-pergunta">Você tem autorização expressa (contrato ou autorização do
+                                proprietário) para ter animais?</legend>
+
+                            <div>
+                                <input type="radio" name="autorizacao-cliente" id="autorização-sim" value="sim">
+                                <label for="autorização-sim">Sim! Farei upload do documento</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="autorizacao-cliente" id="autorizacao-nao" value="nao">
+                                <label for="autorizacao-nao">Não tenho certeza / Não possuo permissão</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="grupo-campo">
+                            <label for="arquivo">Se sim, enviar autorização:</label>
+                            <input type="file" name="arquivo" id="arquivo">
+                        </div>
+                    </div>
+
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">O local possui área externa (quintal, varanda ou sacada)?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="area-externa" id="tem-area-seg" value="sim, é segura e sercada"
+                                required>
+                            <label for="tem-area-seg">Sim, é segura e sercada</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="area-externa" id="tem-area-n-ad"
+                                value="sim, mas sem proteção adequada">
+                            <label for="tem-area-n-ad">Sim, mas sem proteção adequada</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="area-externa" id="nao-tem" value="não possui">
+                            <label for="nao-tem">Não possui</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">Onde o animal ficará na maior parte do tempo?</legend>
+
+                        <div>
+                            <input type="radio" name="animal-area" id="dentro-casa" value="dentro" required>
+                            <label for="dentro-casa">Dentro de casa</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="animal-area" id="fora-casa" value="fora">
+                            <label for="fora-casa">Área externa</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="animal-area" id="livre" value="livre">
+                            <label for="livre">Livre acesso (dentro e fora)</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="btn-conteiner">
+                        <button type="submit" class="btn">
+                            Avançar
+                        </button>
+
+                        <a href="formulario_adocao_estrutura_familiar.html" class="btn-voltar"><i
+                                class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Conectando histórias, unindo corações!</p>
+    </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src=" https://cdn.userway.org/widget.js " data-account=" RmAYIi7rVF "></script>
+
+    <script src="/js/forms_adocao_er.js"></script>
+    <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

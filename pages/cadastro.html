@@ -27,7 +27,7 @@
                                     </div>
                                     <div class="btn-perfil-conteiner">
                                         <input type="radio" id="voluntario" name="perfil" value="voluntario">
-                                        <label for="voluntario" class="btn-perfil">Voluntário(a)</label>
+                                        <label for="voluntario" class="btn-perfil voluntario">Voluntário(a)</label>
                                     </div>
                                 </div>
                             </fieldset>
@@ -35,7 +35,7 @@
                             <fieldset class="perfil-voluntario-conteiner" id="perfilVoluntario">
                                 <legend class="label-cadastro">Selecione o tipo de voluntário:</legend>
 
-                                <div class="opcoes-perfil-voluntario" >
+                                <div class="opcoes-perfil-voluntario">
                                     <div class="item-opcao-perfil-voluntario">
                                         <input type="radio" id="veterinario" name="perfil-voluntário"
                                             value="veterinario">
@@ -56,24 +56,26 @@
 
                             <div class="item-forms-cadastro">
                                 <label for="nomeCompleto" class="label-cadastro">Nome completo</label>
-                                <input type="text" name="nomeCompleto" id="nomeCompleto" required>
+                                <input type="text" name="nomeCompleto" id="nomeCompleto" required
+                                    placeholder="Nome completo">
                             </div>
 
                             <div class="item-forms-cadastro">
                                 <label for="idadeUser" class="label-cadastro">Idade</label>
-                                <input type="number" name="idadeUser" id="idadeUser" required>
+                                <input type="number" name="idadeUser" id="idadeUser" required placeholder="18">
                             </div>
 
                             <div class="item-forms-cadastro">
                                 <label for="emailCadastro" class="label-cadastro">E-mail</label>
-                                <input type="email" name="emailCadastro" id="emailCadastro" required>
+                                <input type="email" name="emailCadastro" id="emailCadastro" required
+                                    placeholder="exemplo@gmail.com">
                             </div>
 
                             <div class="item-forms-cadastro">
                                 <label for="senhaCadastro" class="label-cadastro">Senha</label>
                                 <div class="campo-senha">
-                                    <input type="password" name="senhaCadastro" id="senhaCadastro" class="item-input-login"
-                                        required>
+                                    <input type="password" name="senhaCadastro" id="senhaCadastro"
+                                        class="item-input-login" required placeholder="********">
                                     <button type="button" id="btnIconeSenha">
                                         <i id="alterarIconeCadastro" class="fa-solid fa-eye-slash"></i>
                                     </button>
@@ -84,8 +86,8 @@
                                 <label for="confirmacaoSenha" class="label-cadastro">Confirmação de
                                     senha</label>
                                 <div class="campo-senha">
-                                    <input type="password" name="confirmacaoSenha" id="confirmacaoSenha" class="item-input-login"
-                                        required>
+                                    <input type="password" name="confirmacaoSenha" id="confirmacaoSenha"
+                                        class="item-input-login" required placeholder="********">
                                     <button type="button" id="btnIconeConfirmacao">
                                         <i id="alterarIconeConfirmacao" class="fa-solid fa-eye-slash"></i>
                                     </button>
@@ -123,6 +125,20 @@
             </div>
         </section>
     </main>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src=" https://cdn.userway.org/widget.js " data-account=" RmAYIi7rVF "></script>
 
     <script src="/js/cadastro.js"></script>
     <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>

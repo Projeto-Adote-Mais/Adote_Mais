@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="/img/logo_laranja.svg" type="image/svg">
+    <link rel="stylesheet" href="/css/formulario_adocao_ef.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Adoção | Estrutura Familiar</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-conteiner">
+            <div class="header-logo">
+                <img src="/img/logo-branca-laranja.svg" alt="Logo Adote Mais">
+            </div>
+            <h1 class="titulo-forms">
+                Estrutura familiar
+            </h1>
+            <p class="paragrafo-mensagem">
+                Antes de conhecer o seu futuro companheiro, conte um pouquinho sobre a família que o receberá. Assim,
+                conseguimos garantir o melhor para ambos!
+            </p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="forms-conteiner">
+                <h3 class="titulo-familia">Conhecendo a nova família</h3>
+                <form class="forms">
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">Todos os familiares que vivem na residência estão cientes e de
+                            acordo com a adoção?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="familia-cliente" id="familia-sim" value="sim" required>
+                            <label for="familia-sim">Sim</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="familia-cliente" id="familia-nao" value="nao">
+                            <label for="familia-nao">Não</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="grupo-campo">
+                        <label for="qtd-pessoas" class="titulo-pergunta">Quantas pessoas há na residência incluíndo
+                            você?</label>
+                        <input type="number" name="qtd-pessoas" id="qtd-pessoas" required placeholder="1">
+                    </div>
+
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">Você e / ou outras pessoas que moram contigo estão empregadas?
+                        </legend>
+
+                        <div>
+                            <input type="radio" name="pessoas-trabalham" id="trabalho-sim" value="sim" required>
+                            <label for="trabalho-sim">Sim</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="pessoas-trabalham" id="trabalho-nao" value="nao">
+                            <label for="trabalho-nao">Não</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">Existem crianças na residência?</legend>
+
+                        <div>
+                            <input type="radio" name="familia-crianca" id="crianca-sim" value="sim" required>
+                            <label for="crianca-sim">Sim</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="familia-crianca" id="crianca-nao" value="nao">
+                            <label for="crianca-nao">Não</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-pergunta esconder" id="bloco-criancas">
+                        <legend class="titulo-pergunta">Informe a faixa etária da criança mais nova:</legend>
+
+                        <div>
+                            <input type="radio" name="qtd-crianca" id="crianca-0m-6m" value="0 a 6 meses">
+                            <label for="crianca-0m-6m">0 a 6 meses</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="qtd-crianca" id="crianca-7m-3a" value="7 meses a 3 anos">
+                            <label for="crianca-7m-3a">7 meses a 3 anos</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="qtd-crianca" id="crianca-4a-8a" value="4 a 8 anos">
+                            <label for="crianca-4a-8a">4 a 8 anos</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="qtd-crianca" id="crianca-9a-12a" value="9 a 12 anos">
+                            <label for="crianca-9a-12a">9 a 12 anos</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">Há outros animais de estimação em casa?</legend>
+
+                        <div>
+                            <input type="radio" name="animal-estimacao" id="animal-estimacao-sim" value="sim" required>
+                            <label for="animal-estimacao-sim">Sim</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="animal-estimacao" id="animal-estimacao-nao" value="nao">
+                            <label for="animal-estimacao-nao">Não</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="esconder" id="bloco-animais">
+                        <fieldset class="grupo-pergunta ">
+                            <legend class="titulo-pergunta">Informe a quantidade:</legend>
+
+                            <div>
+                                <input type="radio" name="qtd-animal-estimacao" id="estimacao-1" value="Apenas 1">
+                                <label for="estimacao-1">Apenas 1</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="qtd-animal-estimacao" id="estimacao-3" value="Até 3">
+                                <label for="estimacao-3">Até 3</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="qtd-animal-estimacao" id="estimacao-4" value="4 ou mais">
+                                <label for="estimacao-4">4 ou mais</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="grupo-pergunta inf-especie ">
+                            <legend class="titulo-pergunta ">Informe a(s) espécie(s):</legend>
+                            <div>
+                                <input type="checkbox" name="animais[]" id="tem-cachorro" value="cachorro">
+                                <label for="tem-cachorro">Cachorro</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="animais[]" id="tem-gato" value="gato">
+                                <label for="tem-gato">Gato</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="animais[]" id="tem-passarinho" value="passarinho">
+                                <label for="tem-passarinho">Passarinho</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="animais[]" id="tem-outros" value="outros">
+                                <label for="tem-outros">Outros</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="btn-conteiner">
+                        <button type="submit" class="btn">
+                            Avançar
+                        </button>
+
+                        <a href="formulario_adocao.html" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Conectando histórias, unindo corações!</p>
+    </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src=" https://cdn.userway.org/widget.js " data-account=" RmAYIi7rVF "></script>
+
+    <script src="/js/forms_adocao_ef.js"></script>
+    <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

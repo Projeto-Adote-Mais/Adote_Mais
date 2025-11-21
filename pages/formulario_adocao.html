@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="/img/logo_laranja.svg" type="image/x-svg">
+    <link rel="stylesheet" href="/css/formulario_adocao.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Adoção</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-conteiner">
+            <div class="header-logo">
+                <img src="/img/logo-branca-laranja.svg" alt="Logo Adote Mais">
+            </div>
+            <h1 class="titulo-forms">
+                Formulário de Adoção
+            </h1>
+            <h2 class="subtitulo-forms">
+                Ficamos feliz por tomar essa decisão!
+            </h2>
+            <p class="paragrafo-mensagem">
+                Este formulário será o pilar fundamental para analisar o seu perfil de tutor e se é compatível com o pet
+                que você deseja adotar.
+            </p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="forms-conteiner">
+                <h3 class="titulo-dados">Dados pessoais</h3>
+                <form class="forms">
+                    <div class="grupo-campos">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required placeholder="Primeiro nome">
+                        <p class="p-mensagem"></p>
+                    </div>
+                    <div class="grupo-campos">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" required placeholder="Sobrenome">
+                        <p class="p-mensagem"></p>
+                    </div>
+                    <div class="grupo-campos">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf" required placeholder="00000000000">
+                        <p class="p-mensagem"></p>
+                    </div>
+                    <div class="grupo-campos">
+                        <label for="rg">RG</label>
+                        <input type="text" name="rg" id="rg" required placeholder="00000000">
+                        <p class="p-mensagem"></p>
+                    </div>
+                    <div class="grupo-campos">
+                        <label for="tel">Telefone para contato</label>
+                        <input type="text" name="tel" id="tel" required placeholder="(11) 00000-0000">
+                        <p class="p-mensagem"></p>
+                    </div>
+                    <div class="grupo-campos">
+                        <label for="email">E-mail para contato</label>
+                        <input type="email" name="email" id="email" required placeholder="exemplo@gmail.com">
+                    </div>
+
+                    <fieldset class="termos">
+                        <legend class="titulo-termos">Termos e condições</legend>
+                        <div class="grupo-termos">
+                            <input type="checkbox" id="termo-up" name="termo-up" required>
+                            <label for="termo-up">Eu li e concordo com os <a href="#">Termos de Uso e
+                                    Privacidade.</a></label>
+                        </div>
+                        <div class="grupo-termos">
+                            <input type="checkbox" id="contato-ong" name="contato-ong" required>
+                            <label for="contato-ong" class="">Aceito que as ongs entrem em contato comigo para recolher
+                                informações adicionais.</label>
+                        </div>
+                    </fieldset>
+                    <div class="btn-conteiner">
+                        <button type="submit" class="btn">
+                            Avançar
+                        </button>
+
+                        <a href="/pages/perfil.html" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Conectando histórias, unindo corações!</p>
+    </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src=" https://cdn.userway.org/widget.js " data-account=" RmAYIi7rVF "></script>
+
+    <script src="/js/forms_adocao_dp.js"></script>
+    <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

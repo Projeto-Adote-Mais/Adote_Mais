@@ -1,0 +1,195 @@
+@import url(reset.css);
+
+body {
+  background-color: #fca11d;
+  color: #333333;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url(/img/fundo-cadastro.svg);
+  background-repeat: no-repeat;
+  background-position: center 5%;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -2;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: hsla(49, 100%, 60%, 0.2);
+  z-index: -1;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.conteiner {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.conteiner h1 {
+  font-size: 28px;
+  color: #fbfbfb;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.forms {
+  background-color: #fbfbfb;
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+
+.textos-forms {
+  display: grid;
+  gap: 20px;
+}
+
+.textos-forms h2 {
+  font-size: 24px;
+}
+
+.textos-forms p {
+  font-size: 12px;
+}
+
+.textos-forms .agradecimento {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.grupo-campos {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.grupo-campos label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.grupo-campos input,
+select,
+textarea {
+  border: 2px solid #33333352;
+  border-radius: 5px;
+  padding: 7px;
+  color: #333333;
+  background-color: transparent;
+}
+
+.grupo-campos textarea {
+  resize: none;
+}
+
+.label-animal {
+  justify-self: left;
+}
+
+#foto-animal {
+  display: none;
+}
+
+.btn-file {
+  background: linear-gradient(to right, #fca11d, #ffd833);
+  color: #fbfbfb;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+#file-name {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.file-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.btn-conteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fbfbfb;
+  background-color: #43bcff;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:nth-child(2) {
+  background-color: #fca11d;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 10px #43bdff3b;
+}
+
+.btn:nth-child(2):hover {
+  box-shadow: 0px 4px 10px #fca31d3b;
+}
+
+.p-mensagem,
+.p-mensagem-positiva {
+  font-size: 14px;
+  font-weight: 600;
+  display: none;
+}
+
+.p-mensagem {
+  color: #fca11d;
+}
+
+.p-mensagem-positiva {
+  color: #8ad83f;
+}
+
+@media (max-width: 474px) {
+  #file-name {
+    margin-left: 0px;
+    font-size: 12px;
+  }
+
+  .btn-file {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .file-wrapper {
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+
+  }
+
+  .btn-conteiner {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

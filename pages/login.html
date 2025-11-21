@@ -21,13 +21,15 @@
                     <form action="" class="forms">
                         <div class="item-email-user">
                             <label for="emailUser" class="item-label">E-mail</label>
-                            <input type="email" name="emailUser" id="emailUser" class="item-input-login" required>
+                            <input type="email" name="emailUser" id="emailUser" class="item-input-login" required
+                                placeholder="exemplo@gmail.com">
                         </div>
 
                         <div class="item-senha">
                             <label for="senhaUser" class="item-label">Senha</label>
                             <div class="campo-senha">
-                                <input type="password" name="senhaUser" id="senhaUser" class="item-input-login" required>
+                                <input type="password" name="senhaUser" id="senhaUser" class="item-input-login" required
+                                    placeholder="********">
                                 <button type="button" id="botaoIconeSenha">
                                     <i id="alterarIconeSenha" class="fa-solid fa-eye-slash"></i>
                                 </button>
@@ -35,15 +37,29 @@
                         </div>
                         <a href="#" class="esqueci_senha">Esqueci minha senha.</a>
                         <button type="submit" class="btn-entrar">Entrar</button>
-                        <p class="nao-tem-conta">Ainda não tem uma conta? <a href="#">Cadastre-se</a></p>
+                        <p class="nao-tem-conta">Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
                     </form>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src=" https://cdn.userway.org/widget.js " data-account=" RmAYIi7rVF "></script>
+
     <script src="/js/login.js"></script>
     <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
-    <script src=" https://cdn.userway.org/widget.js " data-account=" RmAYIi7rVF "></script>
 </body>
 
 </html>

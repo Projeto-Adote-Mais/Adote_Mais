@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="/img/logo_laranja.svg" type="image/svg">
+    <link rel="stylesheet" href="/css/formulario_adocao_ci.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Adoção | Perfil do Animal Desejado</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-conteiner">
+            <div class="header-logo">
+                <img src="/img/logo-branca-laranja.svg" alt="Logo Adote Mais">
+            </div>
+            <h1 class="titulo-forms">
+                Perfil do Animal Desejado
+            </h1>
+            <p class="paragrafo-mensagem">
+                Antes de encontrar o amigo ideal, nos conte um pouco sobre o tipo de companheiro que você procura.
+                Assim, ajudamos a garantir uma adoção feliz e harmoniosa!
+            </p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="forms-conteiner">
+                <h3 class="titulo-residencial">Companheiro ideal para você</h3>
+                <form class="forms">
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">Espécie de preferência:</legend>
+
+                        <div>
+                            <input type="radio" name="especie" id="cachorro" value="cachorro" required>
+                            <label for="cachorro">Cachorro</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="especie" id="gato" value="gato">
+                            <label for="gato">Gato</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-pergunta esconder" id="bloco-porte">
+                        <legend class="titulo-pergunta">Porte desejado:</legend>
+
+                        <div>
+                            <input type="radio" name="porte-animal" id="pequeno" value="pequeno">
+                            <label for="pequeno">Pequeno</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="porte-animal" id="medio" value="medio">
+                            <label for="medio">Médio</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="porte-animal" id="grande" value="grande">
+                            <label for="grande">Grande</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="porte-animal" id="porte-indiferente" value="indiferente">
+                            <label for="porte-indiferente">Indiferente</label>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">Idade do animal:</legend>
+
+                        <div>
+                            <input type="radio" name="idade-animal" id="filhote" value="filhote" required>
+                            <label for="filhote">Filhote</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="idade-animal" id="jovem" value="jovem">
+                            <label for="jovem">Jovem (1 a 3 anos)</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="idade-animal" id="senior" value="senior">
+                            <label for="senior">Sênior (8 anos ou mais)</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="idade-animal" id="indiferente" value="indiferente">
+                            <label for="indiferente">Indiferente</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">Sexo do animal:</legend>
+
+                        <div>
+                            <input type="radio" name="animal-sexo" id="macho" value="macho" required>
+                            <label for="macho">Macho</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="animal-sexo" id="femea" value="femea">
+                            <label for="femea">Fêmea</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="animal-sexo" id="indiferente" value="indiferente">
+                            <label for="indiferente">Indiferente</label>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">Temperamento desejado (Marque as opções que mais se encaixam com
+                            o que você busca): </legend>
+                        <div>
+                            <input type="checkbox" name="temperamento[]" id="calmo" value="calmo">
+                            <label for="calmo">Calmo e tranquilo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="temperamento[]" id="brincalhao" value="brincalhao">
+                            <label for="brincalhao">Brincalhão e ativo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="temperamento[]" id="protetor" value="protetor">
+                            <label for="protetor">Protetor</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="temperamento[]" id="sociavel-animais" value="sociavel-animais">
+                            <label for="sociavel-animais">Sociável com outros animais</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="temperamento[]" id="sociavel-crianca" value="sociavel-crianca">
+                            <label for="sociavel-crianca">Sociável com crianças</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="temperamento[]" id="independente" value="independente">
+                            <label for="independente">Independente</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-pergunta">
+                        <legend class="titulo-pergunta">Você está disposto(a) a adotar um animal com necessidades
+                            especiais?</legend>
+
+                        <div>
+                            <input type="radio" name="necessidades-especiais-animal" id="necessidades-sim" value="sim"
+                                required>
+                            <label for="necessidades-sim">Sim</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="necessidades-especiais-animal" id="necessidades-talvez"
+                                value="talvez">
+                            <label for="necessidades-talvez">Talvez, depende do caso</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="necessidades-especiais-animal" id="necessidades-nao" value="nao">
+                            <label for="necessidades-nao">Não</label>
+                        </div>
+
+                    </fieldset>
+
+                    <div class="grupo-campo">
+                        <label for="caracteristicas">Há alguma característica específica que você procura?</label>
+                        <textarea name="caracteristicas" id="caracteristicas" rows="7"
+                            placeholder="Ex: pelagem curta, idade aproximada, raça, comportamento, etc."></textarea>
+                    </div>
+
+                    <div class="grupo-termo">
+                        <input type="checkbox" name="info-verdadeiras" id="info-verdadeiras" required>
+                        <label for="info-verdadeiras">Declaro que todas as informações prestadas neste formulário são
+                            verdadeiras e correspondem à realidade.</label>
+                    </div>
+
+                    <div class="btn-conteiner">
+                        <button type="submit" class="btn">
+                            Enviar
+                        </button>
+
+                        <a href="formulario_adocao_estrutura_residencial.html" class="btn-voltar"><i
+                                class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Conectando histórias, unindo corações!</p>
+    </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src=" https://cdn.userway.org/widget.js " data-account=" RmAYIi7rVF "></script>
+
+    <script src="/js/forms_adocao_ci.js"></script>
+    <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
