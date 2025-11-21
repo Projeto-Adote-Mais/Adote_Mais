@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(./reset.css);
 
 .body {
   position: relative;
@@ -11,7 +11,7 @@
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url(/img/fundo-login.svg);
+  background-image: url(./../img/fundo-login.svg);
   opacity: 0.2;
   background-position: center 40%;
   background-size: cover;

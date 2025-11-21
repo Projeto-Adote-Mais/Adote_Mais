@@ -40,7 +40,7 @@ function verificaCampos(event) {
         positivo.style.display = "block";
 
         setTimeout(() => {
-            window.location.replace("/pages/perfil.html"); 
+            window.location.replace("./../pages/perfil.html"); 
         }, 2000);
         
     }

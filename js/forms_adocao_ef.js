@@ -42,6 +42,6 @@ const forms = document.querySelector(".forms");
 forms.addEventListener("submit", (event) => {
     event.preventDefault();
     setTimeout(() => {
-        window.location.href = "/pages/formulario_adocao_estrutura_residencial.html";
+        window.location.href = "./../pages/formulario_adocao_estrutura_residencial.html";
     }, 1000);
 });

@@ -65,7 +65,7 @@ function limparMensagem() {
 function redireciona(){
     exibirMensagem("Conta criada com sucesso!");
     setTimeout(() => {
-        window.location.replace("../pages/login.html");
+        window.location.replace("./../pages/login.html");
     }, 2000);
 }
 
@@ -80,7 +80,7 @@ function verificaForms(event){
         exibirMensagem("Para criar a conta é preciso ter 18 anos ou mais.");
 
         setTimeout(() => {
-            window.location.replace("../index.html");
+            window.location.replace("./../index.html");
         }, 2000);
         
         return;

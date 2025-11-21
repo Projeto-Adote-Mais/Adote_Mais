@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(./reset.css);
 
 a {
   text-decoration: none;
@@ -199,7 +199,7 @@ body {
   position: absolute;
   width: 35px;
   height: 35px;
-  background-image: url("/img/coracao-amarelo-apresenta-plan.svg");
+  background-image: url("./../img/coracao-amarelo-apresenta-plan.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -307,7 +307,7 @@ body {
   left: -20px;
   width: 20px;
   height: 20px;
-  background-image: url(/img/verificado-planos2.svg);
+  background-image: url(./../img/verificado-planos2.svg);
   background-repeat: no-repeat;
   background-size: contain;
   vertical-align: middle;
@@ -387,7 +387,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(/img/fundo-forms-contato.svg);
+  background-image: url(./../img/fundo-forms-contato.svg);
   opacity: 0.3;
   background-repeat: no-repeat;
   background-size: contain;
@@ -469,7 +469,7 @@ textarea {
   position: absolute;
   inset: 0;
   top: 12px;
-  background-image: url(/img/detalhe-doacao.svg);
+  background-image: url(./../img/detalhe-doacao.svg);
   background-repeat: no-repeat;
   background-size: contain;
   max-width: 55%;
@@ -524,7 +524,7 @@ textarea {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/img/patas-footer-padrao.svg");
+  background-image: url("./../img/patas-footer-padrao.svg");
   opacity: 0.4;
   background-repeat: no-repeat;
   background-size: contain;

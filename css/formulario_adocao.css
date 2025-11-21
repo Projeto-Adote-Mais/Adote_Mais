@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(./reset.css);
 
 body {
   background-color: #fbfbfb;
@@ -32,7 +32,7 @@ fieldset {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(/img/fundo-forms.svg);
+  background-image: url(./../img/fundo-forms.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -200,7 +200,7 @@ fieldset {
   left: 0;
   width: 40px;
   height: 30px;
-  background-image: url(/img/detalhe-footer-forms.svg);
+  background-image: url(./../img/detalhe-footer-forms.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }

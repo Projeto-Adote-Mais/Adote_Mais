@@ -21,7 +21,7 @@ const forms = document.querySelector(".forms");
 forms.addEventListener("submit", (event) => {
     event.preventDefault();
     setTimeout(() => {
-        window.location.href = "/pages/formulario_adocao_companheiro_ideal.html";
+        window.location.href = "./../pages/formulario_adocao_companheiro_ideal.html";
     }, 1000);
 });
 
