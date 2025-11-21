@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(./reset.css);
 
 a {
   text-decoration: none;
@@ -191,7 +191,7 @@ body {
   right: 430px;
   width: 900px;
   height: 900px;
-  background-image: url("/img/pata-fundo-adocao.svg");
+  background-image: url("./../img/pata-fundo-adocao.svg");
   opacity: 0.3;
   background-repeat: no-repeat;
   background-size: contain;
@@ -221,7 +221,7 @@ body {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/img/correto.svg);
+  background-image: url(./../img/correto.svg);
   background-repeat: no-repeat;
   background-size: contain;
   vertical-align: middle;
@@ -285,7 +285,7 @@ body {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/img/pata-verde.svg);
+  background-image: url(./../img/pata-verde.svg);
   background-repeat: no-repeat;
   background-size: contain;
   vertical-align: middle;
@@ -366,7 +366,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(/img/patas-footer-padrao.svg);
+  background-image: url(./../img/patas-footer-padrao.svg);
   opacity: 0.4;
   background-repeat: no-repeat;
   background-size: contain;

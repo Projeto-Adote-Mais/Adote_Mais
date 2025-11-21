@@ -481,7 +481,7 @@ button:hover {
   width: 380px;
   height: 380px;
   top: 20%;
-  background-image: url("../img/formaA.svg");
+  background-image: url("./../img/formaA.svg");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
@@ -495,7 +495,7 @@ button:hover {
   height: 500px;
   top: 40%;
   right: -280px;
-  background-image: url("../img/formaB.svg");
+  background-image: url("./../img/formaB.svg");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
@@ -525,7 +525,7 @@ button:hover {
   position: absolute;
   inset: 0;
   top: -95%;
-  background-image: url("/img/pets-footer-inicio.png");
+  background-image: url("./../img/pets-footer-inicio.png");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -535,7 +535,7 @@ button:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/img/patas-footer-padrao.svg");
+  background-image: url("./../img/patas-footer-padrao.svg");
   opacity: 0.4;
   background-repeat: no-repeat;
   background-size: contain;

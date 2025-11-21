@@ -23,6 +23,6 @@ const forms = document.querySelector(".forms");
 forms.addEventListener("submit", (event) => {
     event.preventDefault();
     setTimeout(() => {
-        window.location.href = "/pages/agradecimento.html";
+        window.location.href = "./../pages/agradecimento.html";
     }, 1000);
 });

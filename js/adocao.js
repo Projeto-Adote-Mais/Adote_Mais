@@ -24,7 +24,7 @@ const PET_DATA = {
     castrada: "Sim",
     vacina: "V4 e Antirrábica",
     historia: "Foi resgatada filhote, hoje está totalmente recuperada e sociável.",
-    img: "/img/pet-criterios-adocao1.png"
+    img: "./../img/pet-criterios-adocao1.png"
   },
   apollo: {
     nome: "Apollo",
@@ -36,7 +36,7 @@ const PET_DATA = {
     castrada: "Sim",
     vacina: "V8 e Antirrábica",
     historia: "Encontrado abandonado na rua, é muito dócil, brincalhão e adora correr no parque.",
-    img: "/img/pet-criterios-adocao2.png"
+    img: "./../img/pet-criterios-adocao2.png"
   },
   fred: {
     nome: "Fred",
@@ -48,7 +48,7 @@ const PET_DATA = {
     castrada: "Sim",
     vacina: "V10 e Antirrábica",
     historia: "Um cão de guarda muito amigável. Ideal para casa com quintal e experiência com cães de porte médio.",
-    img: "/img/pet-criterios-adocao3.png"
+    img: "./../img/pet-criterios-adocao3.png"
   }
 };
 
@@ -109,5 +109,5 @@ document.addEventListener('DOMContentLoaded', () => {
 const btnContinuar = document.querySelector("#btn-continuar");
 
 btnContinuar.addEventListener("click", () => {
-  window.location.href = "/pages/formulario_adocao.html";
+  window.location.href = "./../pages/formulario_adocao.html";
 });

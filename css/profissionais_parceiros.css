@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(./reset.css);
 
 a {
   text-decoration: none;
@@ -207,7 +207,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(/img/fundo_profissionais_parce.svg);
+  background-image: url(./../img/fundo_profissionais_parce.svg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -301,7 +301,7 @@ body {
   width: 25px;
   height: 25px;
   margin-right: 5px;
-  background-image: url(/img/consulta.svg);
+  background-image: url(./../img/consulta.svg);
   background-repeat: no-repeat;
   background-size: contain;
   vertical-align: middle;
@@ -313,7 +313,7 @@ body {
   width: 25px;
   height: 25px;
   margin-right: 5px;
-  background-image: url(/img/local.svg);
+  background-image: url(./../img/local.svg);
   background-repeat: no-repeat;
   background-size: contain;
   vertical-align: middle;
@@ -360,7 +360,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(/img/patas-footer-padrao.svg);
+  background-image: url(./../img/patas-footer-padrao.svg);
   opacity: 0.4;
   background-repeat: no-repeat;
   background-size: contain;

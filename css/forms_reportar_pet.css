@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(./reset.css);
 
 body {
   background-color: #fca11d;
@@ -9,7 +9,7 @@ body::after {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url(/img/fundo-cadastro.svg);
+  background-image: url(./../img/fundo-cadastro.svg);
   background-repeat: no-repeat;
   background-position: center 5%;
   background-size: cover;

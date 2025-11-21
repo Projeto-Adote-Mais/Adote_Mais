@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(./reset.css);
 
 a {
   text-decoration: none;
@@ -18,7 +18,7 @@ body::after {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url(/img/fundo-perfil.svg);
+  background-image: url(./../img/fundo-perfil.svg);
   background-repeat: no-repeat;
   opacity: 0.1;
   background-position: center 10%;

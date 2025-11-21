@@ -184,10 +184,7 @@ body {
 .faixa_azul-conteiner {
   max-width: 1100px;
   margin: 0 auto;
-  /* margin-top: 120px; */
-  /* height: 250px; */
   padding: 60px 20px;
-  /* z-index: -1; */
 }
 
 .faixa_azul h1 {
@@ -195,18 +192,6 @@ body {
   color: #013552;
   justify-self: center;
 }
-
-/* .faixa_azul h1 {    
-  text-align: center;      
-  color: #013552;
-  z-index: 1;
-  position: relative;
-  bottom: 150px;
-  padding: 0px;
-  margin-left: 0px;
-  font-size: 50px;
- 
-} */
 
 .faq-conteiner {
   max-width: 1100px;
@@ -289,7 +274,7 @@ details:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/img/patas-footer-padrao.svg");
+  background-image: url("./../img/patas-footer-padrao.svg");
   opacity: 0.4;
   background-repeat: no-repeat;
   background-size: contain;
