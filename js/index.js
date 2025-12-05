@@ -20,5 +20,5 @@ btnLogoHeader.addEventListener("click", (event) => {
 
 const btnAdote = document.querySelector(".adote");
 btnAdote.addEventListener("click", () => {
-  window.location.href = "./../pages/adocao.html";
+  window.location.href = "./pages/adocao.html";
 });
