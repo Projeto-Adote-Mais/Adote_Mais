@@ -81,7 +81,7 @@ function verificaForms(event){
 
         setTimeout(() => {
             window.location.replace("./../index.html");
-        }, 2000);
+        }, 5000);
         
         return;
     }

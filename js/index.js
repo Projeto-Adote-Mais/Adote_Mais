@@ -12,3 +12,13 @@ window.addEventListener("resize", () => {
     navMobile.classList.remove("active");
   }
 });
+
+const btnLogoHeader = document.querySelector(".link-logo-header");
+btnLogoHeader.addEventListener("click", (event) => {
+  event.preventDefault();
+});
+
+const btnAdote = document.querySelector(".adote");
+btnAdote.addEventListener("click", () => {
+  window.location.href = "./../pages/adocao.html";
+});

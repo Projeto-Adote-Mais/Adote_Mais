@@ -1,0 +1,29 @@
+@import url(./reset.css);
+
+.uai {
+  right: 0vw !important;
+}
+
+.emscripten {
+  z-index: 9999999999 !important;
+}
+
+.remove {
+  display: none !important;
+}
+
+.userway_buttons_wrapper {
+  top: 35vh !important;
+}
+
+@media (max-width: 1200px) {
+  .userway_buttons_wrapper {
+    margin-left: 10px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .userway_buttons_wrapper {
+    top: 30vh !important;
+  }
+}

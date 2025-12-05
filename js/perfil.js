@@ -12,3 +12,15 @@ window.addEventListener("resize", () => {
     navMobile.classList.remove("active");
   }
 });
+
+const btnPerfilImgs = document.querySelectorAll(".btn-perfil-img");
+btnPerfilImgs.forEach(btnPerfilImg => {
+  btnPerfilImg.addEventListener("click", (event) => {
+    event.preventDefault();
+  });
+});
+
+const btnImagem = document.querySelector("#perfil-img");
+btnImagem.addEventListener("click", () => {
+  navMobile.classList.remove("active");
+});
