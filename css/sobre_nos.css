@@ -15,11 +15,6 @@ body {
   color: #333333;
 }
 
-/* .uai {
-  top: 35vh;
-  right: 0vw;
-} */
-
 /* Header */
 .header-container {
   max-width: 1100px;
@@ -662,12 +657,6 @@ textarea {
   display: block;
 }
 
-/* @media (max-width: 1200px) {
-  .uai {
-    margin-left: 50%;
-  }
-} */
-
 @media (max-width: 1026px) {
   /* Footer */
   .footer-container {
@@ -977,9 +966,3 @@ textarea {
     border-radius: 20px 20px 20px 100px;
   }
 }
-
-/* @media (max-width: 320px){
-  .uai {
-    top: 30vh;
-  }
-} */

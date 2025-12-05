@@ -623,6 +623,16 @@ button:hover {
   }
 }
 
+@media (max-width: 1200px) {
+  body {
+    overflow-x: none;
+  }
+
+  .depoimento {
+    overflow: hidden;
+  }
+}
+
 @media (max-width: 996px) {
   .footer-container::before {
     top: -45%;
@@ -708,7 +718,7 @@ button:hover {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 749px) {
   .patinha {
     display: none;
   }
@@ -738,6 +748,9 @@ button:hover {
     padding: 0 20px;
   }
 
+}
+
+@media (max-width: 600px) {
   .footer-container::after {
     background-size: cover;
   }
