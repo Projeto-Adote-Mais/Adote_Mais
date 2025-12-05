@@ -1,4 +1,5 @@
 @import url(./reset.css);
+@import url(./userway.css);
 
 a {
   text-decoration: none;
@@ -12,6 +13,7 @@ ul {
 body {
   background-color: #fbfbfb;
   color: #333333;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -470,7 +472,6 @@ button:hover {
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  overflow: hidden;
 }
 
 /* Forma amarela */
@@ -478,9 +479,10 @@ button:hover {
   content: "";
   position: absolute;
   inset: 0;
-  width: 380px;
-  height: 380px;
+  width: 500px;
+  height: 550px;
   top: 20%;
+  left: -15%;
   background-image: url("./../img/formaA.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -691,6 +693,11 @@ button:hover {
     max-width: 80%;
   }
 
+  /* Forma amarela */
+  .depoimento::before {
+    top: 15%;
+  }
+
   /* Forma laranja */
   .depoimento::after {
     top: 65%;
@@ -865,17 +872,15 @@ button:hover {
 
   .depoimento::before {
     position: absolute;
-    width: 320px;
-    height: 380px;
-    top: 100px;
-    left: -10px;
+    width: 400px;
+    height: 400px;
+    top: 10%;
   }
 
   /* Forma laranja  */
   .depoimento::after {
     position: absolute;
     width: 560px;
-    height: 1000px;
     top: 70%;
     right: -290px;
   }

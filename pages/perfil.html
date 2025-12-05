@@ -13,7 +13,9 @@
   <header class="header">
     <div class="header-container">
       <div class="logo-header">
-        <img src="./../img/logo_laranja.svg" alt="Logo Adote Mais">
+        <a href="./../index.html">
+          <img src="./../img/logo_laranja.svg" alt="Logo Adote Mais">
+        </a>
       </div>
 
       <div class="hamburguer" id="btn-mobile" aria-label="Abrir Menu">
@@ -31,7 +33,7 @@
       </nav>
 
       <div class="btn-perfil-user">
-        <a href="./perfil.html"><img src="./../img/avatar-user.png" alt="Imagem do usuário"></a>
+        <a href="./perfil.html" class="btn-perfil-img"><img src="./../img/avatar-user.png" alt="Imagem do usuário"></a>
       </div>
 
       <!-- Menu Mobile -->
@@ -44,8 +46,8 @@
           <li><a href="./profissionais_parceiros.html">Profissionais Parceiros</a></li>
         </ul>
 
-        <div class="btn-mobile-user">
-          <a href="./perfil.html"><img src="./../img/avatar-user.png" alt="Imagem do usuário"></a>
+        <div class="btn-mobile-user" id="perfil-img">
+          <a href="./perfil.html" class="btn-perfil-img"><img src="./../img/avatar-user.png" alt="Imagem do usuário"></a>
         </div>
       </nav>
 
@@ -295,6 +297,7 @@
 
   <script src="./../js/perfil.js"></script>
   <script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
+  <script src="./../js/geral.js"></script>
 </body>
 
 </html>
